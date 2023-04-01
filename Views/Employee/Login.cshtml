@@ -1,0 +1,144 @@
+@* Title       :Online Bus Booking System
+Author      :Abinash(IFET)
+Created at  :01-03-2023
+Updated at  :13-03-2023
+Reviewed by :
+Reviewed at : *@
+
+@{
+  Layout=null;
+}
+@model Employee
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+   <link rel="stylesheet" href="~/css/login.css" type="text/css" />
+
+	</head>
+	<header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-light border-bottom box-shadow mb-3 navbar-red" >
+            <div class="container-fluid" >
+                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img style="width:60px;" src="~/images/bus logo1.png" alt="LOGO">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between" >
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Map</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+	<body>
+	<section class="ftco-section">
+		<div class="container">
+			
+			<div class="row justify-content-center">
+				<div class="col-md-6 col-lg-5">
+					<div class="login-wrap p-4 p-md-5">
+		      	<div class="icon d-flex align-items-center justify-content-center">
+		      		<span class="fa fa-user-o"></span>
+		      	</div>
+		      	<h3 class="text-center mb-4">L O G I N</h3>
+						<form method="post">
+		      		<div class="form-group">
+		      			<input type="email" asp-for="EmailId" class="form-control rounded-left" placeholder="UserMail" required>
+						@Html.ValidationMessageFor(model=>model.EmailId,"",new {@class="error"})
+		      		</div>
+	            <div class="form-group d-flex">
+	              <input type="password" asp-for="userPassword" class="form-control rounded-left" placeholder="Password" required>
+				  @Html.ValidationMessageFor(model=>model.userPassword,"",new {@class="error"})
+	            </div>
+	            <div class="form-group d-md-flex">
+	            	<div class="w-50">
+	            		<label class="checkbox-wrap checkbox-primary">Remember Me
+									  <input type="checkbox" checked>
+									  <span class="checkmark"></span>
+									</label>
+								</div>
+								<div class="w-50 text-md-right">
+									<li class="link">
+
+										<a asp-controller="Employee" asp-action="forgotPassword">Forgot Password?</a>
+									</li>
+									
+								</div>
+								
+	            </div>
+				@if (@TempData["pass"]!=null)
+				{
+					<div>
+				<div id='container'>
+    				<div id='hideMe'>Your password is @TempData["pass"]</div>
+					@{
+						TempData["pass"]=null;
+					}
+				</div>
+				</div>
+					
+				}
+				<h3 class="text-center mb-4">@ViewBag.Message</h3>
+	            <div class="form-group">
+	            	<button type="submit" class="btn btn-primary rounded submit p-3 px-5">Get Started</button>
+	            </div>
+				  
+	          </form>
+	        </div>
+			
+				</div>
+				
+			</div>
+			
+		</div>
+		
+	</section>
+
+	<script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+
+	</body>
+</html>
+
+<style>
+
+	html, body, #container {
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+}
+#container {
+    overflow:hidden;
+    position:relative;
+}
+#hideMe {
+    -webkit-animation: cssAnimation 10s forwards; 
+    animation: cssAnimation 10s forwards;
+}
+@@keyframes cssAnimation {
+    0%   {opacity: 1;}
+    90%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+@@-webkit-keyframes cssAnimation {
+    0%   {opacity: 1;}
+    90%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+</style>

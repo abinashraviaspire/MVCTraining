@@ -1,0 +1,41 @@
+html {
+  font-size: 20px;
+  font-size: large;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0rem white, 0 0 0 0rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 0%;
+}
+
+.display-4 {
+  color:#855AA6;
+  font-family: 'Times New Roman', Times, serif;
+  font: weight 500px;
+}
+.Information{
+  color: black;
+  font-size: large;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: justify;
+  text-align-last: right;
+}
+.content{
+  text-align: justify;
+  text-decoration: blue;
+}

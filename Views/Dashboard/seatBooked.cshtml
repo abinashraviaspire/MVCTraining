@@ -1,0 +1,49 @@
+@* Title       :Online Bus Booking System
+Author      :Abinash(IFET)
+Created at  :01-03-2023
+Updated at  :13-03-2023
+Reviewed by :
+Reviewed at : *@
+
+@using  Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor HttpContextAccessor;
+@{
+  ViewData["Title"]="seatBooked";
+}
+@model Employee
+<head><meta http-equiv='refresh'content="10000;url=https://localhost:5260/Main/SessionExpired" /></head>
+
+<div class="text-center">
+    <h1 class="display-4">Online bus Booking System</h1>
+    <img src="~/images/bus.png" alt="Bus Image" style="width:50%">
+</div>
+        <div class="content">
+                <p> <b>Your booking in our System is confirmed. Thanks for the  booking. For any queries contact the Admins in the 
+                    contact page
+                </b></p>
+        </div>
+        <h4 class="greeting" style="color:#9877d4;margin-left:20px;" style="text-align: center;" >Thank You,  @HttpContextAccessor.HttpContext.Session.GetString("UserName") </h4>
+        <br></br>
+        <a asp-controller="Home" asp-action="logOut">
+           <button class="Submit">Logout</button>
+        </a>
+<style>
+button{
+  font-size: large;
+  background-color: #855AA6;
+  position:relative;
+  text-align: center;
+  margin-left: 40%;
+  width: 200px;
+  height: 50px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  border-color: whitesmoke;
+  border-radius: 5px;
+}.submit{
+  border: 2px solid black;
+}
+.submit:hover{
+  box-shadow: 2px 5px 5px  #523c63;
+}
+</style>

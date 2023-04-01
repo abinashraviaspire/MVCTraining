@@ -1,0 +1,43 @@
+@* Title       :Online Bus Booking System
+Author      :Abinash(IFET)
+Created at  :01-03-2023
+Updated at  :13-03-2023
+Reviewed by :
+Reviewed at : *@
+
+
+@model Database
+<body>
+	<link rel="stylesheet" href="~/css/login.css" type="text/css" />
+
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-10 col-lg-5">
+					<div class="login-wrap p-4 p-md-5">
+		      	<h3 class="text-center mb-4">Forgot Password</h3>
+						<form method="post">
+		      		<div class="form-group">
+		      			<input type="password"asp-for="userInput" class="form-control rounded-left" placeholder="Enter OTP" required>
+						@Html.ValidationMessageFor(model=>model.userInput,"",new {@class="error"})
+						<div asp-validation-for="userInput"></div>
+		      		</div>
+	            <h3 class="text-center mb-4">@ViewBag.OTP</h3>
+	            <div class="form-group">
+	            	<button type="submit" asp-controller="Employee" asp-action="checkCode" class="btn btn-primary rounded submit p-3 px-5">Verify OTP</button>
+	            </div>
+	          </form>  
+	        </div>
+		</div>
+
+			</div>
+			
+		</div>
+		
+	</section>
+	<script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+

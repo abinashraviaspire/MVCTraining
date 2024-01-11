@@ -28,7 +28,7 @@ public class Database{
      
 public string? Date{get;set;}
 public string? Destination{get;set;}
-        static SqlConnection sqlconnection=new SqlConnection("Data Source=JOSEPHABI;Initial Catalog=BusBooking;Integrated Security=True");
+        static SqlConnection sqlconnection=new SqlConnection("Data Source=ASPLAP1139;Initial Catalog=BusBooking;Integrated Security=True");
         static public string login(Employee employee)
         {
                 sqlconnection.Open();

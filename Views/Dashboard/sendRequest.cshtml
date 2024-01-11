@@ -1,0 +1,77 @@
+@* Title       :Online Bus Booking System
+Author      :Abinash(IFET)
+Created at  :01-03-2023
+Updated at  :13-03-2023
+Reviewed by :
+Reviewed at : *@
+
+
+@model Request
+<body>
+	<link rel="stylesheet" href="~/css/login.css" type="text/css" />
+
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-10 col-lg-5">
+					<div class="login-wrap p-4 p-md-5">
+		      	<h3 class="text-center mb-4">Request</h3>
+						<form method="post">
+		      		<div class="form-group">
+		      			<input type="text"asp-for="Message" style="height: 100%;" class="form-control rounded-left" placeholder="Enter Your Request Here" required>
+						@Html.ValidationMessageFor(model=>model.Message,"",new {@class="error"})
+						<div asp-validation-for="Message"></div>
+		      		</div>
+	            <div class="form-group">
+	<button type="submit" onclick="myFunction()" class="btn btn-primary">Send Request</button>
+    <button class="btn btn-danger" asp-action="Index" asp-controller="Dashboard">close</button>
+	            </div>
+	          </form>  
+	        </div>
+		</div>
+
+			</div>
+			
+		</div>
+		
+	</section>
+<script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+<script>
+function myFunction() {
+  alert("Your Request has sent....");
+}
+</script>
+
+
+</body>
+
+<style>
+
+	html, body, #container {
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+}
+#container {
+    overflow:hidden;
+    position:relative;
+}
+#hideMe {
+    -webkit-animation: cssAnimation 10s forwards; 
+    animation: cssAnimation 10s forwards;
+}
+@@keyframes cssAnimation {
+    0%   {opacity: 1;}
+    90%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+@@-webkit-keyframes cssAnimation {
+    0%   {opacity: 1;}
+    90%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+</style>

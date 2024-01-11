@@ -1,4 +1,4 @@
-@model CurrentUser
+@model BookingHistory
 <head>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 </head>
@@ -9,37 +9,29 @@
 <form method="post" >
 		<div class="select-date"><label for="calender"><b>Select date of travelling:</b> </label>
 		<input class="input-date" asp-for="Date" type="date" required>
+		<div style="color: red;">
+		@Html.ValidationMessageFor(model=>model.Date,"",new {@class="error"})</div>
 		</div>
 		<div class="location">
 			<label><b>Select boarding and deboarding point:</b></bSelect></label>
 		<div class="dropdown">
   <datalist id="suggestions">
-    <option value="option1">option1</option>
-	<option value="option2">option2</option>
-	<option value="option3">option3</option>
-	<option value="option4">option4</option>
-	<option value="option5">option5</option>
+    <option value="Pondicherry">Pondicherry</option>
+	<option value="Villupuram">Villupuram</option>
+	<option value="Kovalam">Kovalam</option>
+	<option value="Vandalur">Vandalur</option>
+	<option value="Siruseri">Siruseri</option>
     </datalist>
-    <input placeholder="search" asp-for="Destination" autoComplete="on" list="suggestions" required>
+    <input placeholder="search" asp-for="Destination" autoComplete="off" list="suggestions" required>
   </div>
     </div>
-
 	<div class="button">
-		<button class="submit" asp-controller="Dashboard" asp-action="seatBooked" type="submit" value="Submit">Submit</button>
+		<button class="submit"   type="submit" >Submit</button>
 	<button class="reset" type="Reset" value="Reset">Reset</button>
 	</div>
+	<b class="select-date" >@ViewBag.message</b>
 </form>
 </body>
-
-
-
-@* <div>
-    <datalist id="suggestions">
-        <option>First option</option>
-        <option>Second Option</option>
-    </datalist>
-    <input  autoComplete="on" list="suggestions"/> 
-</div> *@
 
 
 

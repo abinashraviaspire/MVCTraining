@@ -14,11 +14,11 @@ public class Employee{
 
   [Required(ErrorMessage = "Enter e-mail")]
   [EmailAddress]
+  [RegularExpression("^[a-zA-Z0-9_\\.-]+@([a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,6}$", ErrorMessage = "Please Provide Valid Email")]  
   public string? EmailId{get;set;}
 
   [Required(ErrorMessage = "Enter Password")]
   [DataType(DataType.Password)]
-  
   public string? userPassword{get;set;}
    public DateTime DateOfBirth { get; set; }
 

@@ -18,6 +18,7 @@ Reviewed at : *@
     <h1 class="display-4">Online bus Booking System</h1>
     <img src="~/images/bus.png" alt="Bus Image" style="width:50%">
 </div>
+
         <div class="content">
                 <p> <b>The system is user-friendly and efficient, providing a seamless booking experience for Employees. 
          It is easy to maintain the travelling data in this System.
@@ -28,7 +29,7 @@ Reviewed at : *@
         </div>
         <br></br>
         <a asp-controller="Dashboard" asp-action="bookRide">
-           <button class="Submit">Book Ride</button>
+          <button class="Submit">Book Ride</button>
         </a>
 <style>
 button{
@@ -48,5 +49,29 @@ button{
 }
 .submit:hover{
   box-shadow: 2px 5px 5px  #523c63;
+}
+	html, body, #container {
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+}
+#container {
+    overflow:hidden;
+    position:relative;
+}
+#hideMe {
+    -webkit-animation: cssAnimation 10s forwards; 
+    animation: cssAnimation 10s forwards;
+}
+@@keyframes cssAnimation {
+    0%   {opacity: 1;}
+    90%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+@@-webkit-keyframes cssAnimation {
+    0%   {opacity: 1;}
+    90%  {opacity: 1;}
+    100% {opacity: 0;}
 }
 </style>

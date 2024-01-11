@@ -74,10 +74,8 @@ Reviewed at : *@
 									<li class="link">
 
 										<a asp-controller="Employee" asp-action="forgotPassword">Forgot Password?</a>
-									</li>
-									
-								</div>
-								
+									</li>	
+								</div>				
 	            </div>
 				@if (@TempData["pass"]!=null)
 				{
@@ -88,8 +86,7 @@ Reviewed at : *@
 						TempData["pass"]=null;
 					}
 				</div>
-				</div>
-					
+				</div>	
 				}
 				<h3 class="text-center mb-4">@ViewBag.Message</h3>
 	            <div class="form-group">

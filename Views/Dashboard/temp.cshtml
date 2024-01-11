@@ -1,0 +1,203 @@
+@model BookingHistory
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+
+	<div class="header"><h1><b>BOOKING A RIDE</b></h1></div>
+	<div>
+<form method="post" >
+		<div class="select-date"><label for="calender"><b>Select date of travelling:</b> </label>
+		<input class="input-date" asp-for="Date" type="date" required>
+		</div>
+		<div class="location">
+			<label><b>Select boarding and deboarding point:</b></bSelect></label>
+		<div class="dropdown">
+  <datalist id="suggestions">
+    <option value="option1">option1</option>
+	<option value="option2">option2</option>
+	<option value="option3">option3</option>
+	<option value="option4">option4</option>
+	<option value="option5">option5</option>
+    </datalist>
+    <input placeholder="search" asp-for="Destination" autoComplete="on" list="suggestions" required>
+  </div>
+    </div>
+
+	<div class="button">
+		<button class="submit"   type="submit" >Submit</button>
+	<button class="reset" type="Reset" value="Reset">Reset</button>
+	</div>
+	<b class="select-date" >@ViewBag.message</b>
+</form>
+</body>
+
+
+
+<style>
+	body{
+		background-color:#e7d3f8;
+			}
+	.header{
+		text-align: center;
+		margin-top: 95px;
+		color: #855AA6;
+		border: 5px solid #855AA6;
+		border-radius: 0px 40px 0px;
+		margin-left: 25%;
+		margin-right: 25%;
+		 text-shadow: 2px 2px 3px black;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		box-shadow: 2px 5px 10px  #523c63;
+        background-color: #d2bfe0;
+	}
+	.select-date{
+		position: relative;
+		margin-left: 39%;
+		margin-top: 100px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 20px;
+		color: #855AA6;
+	
+	}
+
+	.location{
+		position: relative;
+		margin-top: 50px;
+		margin-left: 29.5%;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 20px;
+		color: #855AA6;
+	
+	}
+	.button{
+		position: relative;
+		margin-left: 45%	
+	}
+	.submit{
+		background-color: #855AA6;
+		background-color:;
+		color: white;
+		font-size: 16px;
+		border-radius: 5px;
+		
+	}
+	.reset{
+		position: relative;
+		margin-top: 50px;
+		margin-left: 10px;
+		background-color: #855AA6;
+		color: white;
+		font-size: 16px;
+		border-radius: 5px;
+		margin-bottom: -20%;
+	}
+	.reset:hover{
+		box-shadow: 2px 2px 5px  #523c63;
+	}
+	.submit:hover{
+		box-shadow: 2px 2px 5px  #523c63;
+	}
+	.option{
+		border: 3px solid black;
+		border-radius: 5px;
+		background-color: #855AA6;
+		color: white;
+	}
+	.option:hover{
+		box-shadow: 2px 2px 5px  #523c63;
+	}
+	select option{
+		background-color: white;
+		color:#855AA6;
+	}
+	.input-date{
+		border: 2px solid black;
+		border-radius: 5px ;
+		background-color: #855AA6;
+		color: white;
+		text-align: center;
+
+	}
+	.input-date:hover{
+		box-shadow: 2px 5px 5px  #523c63;
+	}
+	.input-date::-webkit-calendar-picker-indicator {
+    filter: invert();
+}
+
+.dropbtn {
+  background-color:#855AA6;
+  color: white;
+  font-size: 20px;
+  border: 2px solid black;
+  cursor: pointer;
+  height:35px;
+  width: 170px;
+  border-radius: 5px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+ box-shadow: 2px 5px 5px  #523c63 ;
+}
+
+#myInput {
+  box-sizing: border-box;
+  background-image: url('searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {outline: 3px solid #ddd;}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+	</style>
+<script>
+	function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i<a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}</script>

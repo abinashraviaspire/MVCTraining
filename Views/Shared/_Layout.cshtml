@@ -45,6 +45,9 @@ Reviewed at : *@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Dashboard" asp-action="contact"><b>contact</b></a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Dashboard" asp-action="displayHistory"><b>Booking History</b></a>
+                        </li>
                          }
                         </ul>
                         <div>
@@ -52,7 +55,7 @@ Reviewed at : *@
                                 
                         @if(User.Identity.IsAuthenticated){
                              <li class="nav-item">
-                                <a class="nav-link" asp-area="" asp-controller="Dashboard" asp-action="Index">
+                                <a class="nav-link" asp-area="" asp-controller="Dashboard" asp-action="sendRequest">
                                   <img style="width:20px;" src="~/images/notification.png" alt="notification">
                 </a>
                         </li>

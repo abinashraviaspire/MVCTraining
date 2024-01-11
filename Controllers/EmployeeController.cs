@@ -21,7 +21,6 @@ namespace FirstApp.Controllers
         public  static string? Mail{get;set;}
         public  static string? password{get;set;}
     [HttpGet]
-   
     public IActionResult login()
     {
         ClaimsPrincipal claimUser=HttpContext.User;
@@ -51,6 +50,7 @@ namespace FirstApp.Controllers
         await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme,
         new ClaimsPrincipal(claimsIdentity),properties);
         Log.Information("Employee Login Triggered");  
+        TempData["mail"]=employee.EmailId;
         return RedirectToAction("Index","Dashboard",employee);
        }
        else if (result=="Admin")

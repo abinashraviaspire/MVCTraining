@@ -8,7 +8,8 @@ namespace FirstApp.Data
         public EmployeeDBContext(DbContextOptions options) : base(options)
         {
         }
+        public DbSet<BookingHistory> BookingHistories { get; set; }
         public DbSet<Employee> Employees { get; set; }
-
+        public DbSet<Request> Requests { get; set; }
     }
 }

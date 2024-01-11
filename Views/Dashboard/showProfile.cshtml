@@ -1,10 +1,82 @@
 @using  Microsoft.AspNetCore.Http;
 @inject IHttpContextAccessor HttpContextAccessor;
-<!DOCTYPE html>
-<head>
+@model List<FirstApp.Models.Employee>
 
+
+    @{
+    Layout=null;
+}
+
+
+@using Microsoft.AspNetCore.Http
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Bus Booking</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/FirstApp.styles.css" asp-append-version="true" />
 </head>
-<body>
+<body style="margin-bottom: 50px;">
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-light border-bottom box-shadow mb-3 navbar-red" >
+            <div class="container-fluid" >
+                @if (User.Identity.IsAuthenticated)
+                {
+                  <a class="nav-link" asp-area="" asp-controller="Dashboard" asp-action="Index">
+                    <img style="width:60px;" src="~/images/bus logo1.png" alt="LOGO">
+                </a>
+                   
+                }
+                else
+                {
+                      <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img style="width:60px;" src="~/images/bus logo1.png" alt="LOGO">
+                </a>
+                }
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between" >
+                    <ul class="navbar-nav flex-grow-1">
+                         @if(User.Identity.IsAuthenticated){
+                       <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="map"><b>Map</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Dashboard" asp-action="showProfile"><b>Profile</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Dashboard" asp-action="contact"><b>contact</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Dashboard" asp-action="displayHistory"><b>Booking History</b></a>
+                        </li>
+                         }
+                        </ul>
+                        <div>
+                            <ul class="navbar-nav flex-grow-1">
+                                
+                        @if(User.Identity.IsAuthenticated){
+                             <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Dashboard" asp-action="sendRequest">
+                                  <img style="width:20px;" src="~/images/notification.png" alt="notification">
+                </a>
+                        </li>
+                            
+                            <li class="nav-item">
+                            <a class="nav-link text-dark "  style="text-align:right;" asp-controller="Home" asp-action="logOut"><b>Logout</b></a>
+                        </li>
+                        }
+                        else{
+                            <li class="nav-item">
+                            <a class="nav-link text-dark "  style="text-align:right;" asp-controller="Employee" asp-action="login"><b>Login</b></a>
+                        </li>
+                        }
+                            </ul>
+                           
+                        </div>
+                </div>
+            </div>
+        </nav>
+    </header>
     <h1 class="header"><b>PROFILE</b></h1>
     <div class="container">
         <div class="profile">
@@ -14,12 +86,17 @@
     </div>
     <div class="content">
             <ul>
-                <li>Employee ID: <span>191031002</span></li>
-                <li>Blood group: <span>b positive</span></li>
-                <li>Joined year: <span>span</span></li>
-                <li>Experiance: <span>Trainee</span></li>
-                <li>Location: <span>Pondicherry</span></li>
-                <li>Pincode: <span>605102</span></li>
+                @foreach (var employee in Model){
+                     <li>Employee-ID: <span>@employee.EmployeeId</span></li>
+                     <li>Email-ID: <span>@employee.EmailId</span></li>
+                     <li>Date of Birth: <span>@employee.DateOfBirth</span></li>
+                    <li>Blood group: <span>b positive</span></li>
+                    <li>Joined year: <span>2023</span></li>
+                    <li>Experiance: <span>Trainee</span></li>
+                    <li>Location: <span>Pondicherry</span></li>
+                    <li>Pincode: <span>605102</span></li>
+                }
+               
             </ul>
 
             
@@ -37,7 +114,7 @@
     .profile{
         position: relative;
         width: 600px;
-        height: 400px;
+        height: 500px;
         border-left: ;
         margin-left:25%;
         margin-top: 3%;
@@ -50,7 +127,7 @@
     .content{
         display: flex;
         width: 600px;
-        height: 400px;
+        height: 500px;
         border:  2px solid black;
         border-left: none;
         margin-right: 25%;

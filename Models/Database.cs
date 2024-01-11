@@ -10,11 +10,12 @@ using System.Data;
 using System.Net;
 using System.Net.Mail;
 using System.ComponentModel.DataAnnotations;
+using System.Collections;
 
 namespace FirstApp.Models
 {
 
-    public class Database{
+public class Database{
       public bool Admin{get;set;}
       [Required]
 [DataType(DataType.Password)]
@@ -24,6 +25,9 @@ namespace FirstApp.Models
   public bool KeepLoggedIn{get;set;}
         public static string? password{get;set;}
       private  static string? randomCode;
+     
+public string? Date{get;set;}
+public string? Destination{get;set;}
         static SqlConnection sqlconnection=new SqlConnection("Data Source=JOSEPHABI;Initial Catalog=BusBooking;Integrated Security=True");
         static public string login(Employee employee)
         {
@@ -38,7 +42,7 @@ namespace FirstApp.Models
                 {                 
                   return "success";         
                 }
-                else if ((employee.EmailId=="Admin@gmail.com") && (employee.userPassword=="Admin"))
+                else if ((employee.EmailId=="Admin@gmail.com") && (employee.userPassword=="Admin@1234"))
                 {
                   return "Admin"; 
                 }
@@ -100,5 +104,21 @@ static public string verifyCode(Database database){
                 sqlconnection.Close();
                 return password;
     }
+    public static IEnumerable<Database> GetHistory(string userName)  
+        {  List<Database> History=new  List<Database> ();
+                SqlCommand cmd = new SqlCommand("GetCurrentUserHistory", sqlconnection);  
+                cmd.CommandType = CommandType.StoredProcedure;  
+                cmd.Parameters.AddWithValue("@Name",userName);
+                sqlconnection.Open();  
+                SqlDataReader rdr = cmd.ExecuteReader();  
+                while (rdr.Read())  
+                {     Database user=new Database();
+                    user.Date= rdr["Date"].ToString();  
+                    user.Destination = rdr["Destination"].ToString();  
+                    History.Add(user);  
+                }  
+                sqlconnection.Close(); 
+                return History;
+        }  
 }
 }

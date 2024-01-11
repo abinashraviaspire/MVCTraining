@@ -1,30 +1,35 @@
 using FirstApp.Data;
 using FirstApp.Models;
+using FirstApp.Filters;
 using FirstApp.Models.Admin;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
 
 namespace FirstApp.Controllers
-{
+{ 
     public class AdminController : Controller
     {    
         private readonly EmployeeDBContext employeeDBContext;
 
         public AdminController(EmployeeDBContext employeeDBContext)
         {
-            this.employeeDBContext = employeeDBContext; // dengan membuat ini, bisa private readonly dan connect databse
-        }
-
-        // Membuat fungsi get untuk menampilkan ke layar
+            this.employeeDBContext = employeeDBContext;
+            }
         [HttpGet]
         public async Task<IActionResult> Index()
         {
             var empolyees = await employeeDBContext.Employees.ToListAsync();
             return View(empolyees);
         }
-        // buat fungsi untuk menambahkan karyawan
-        // setelah itu kita dpat menampilkan nya ke layar
-        //sdsdaasd 
+         [HttpGet]
+       public async Task<IActionResult> showRequests()
+        {
+            var requests = await employeeDBContext.Requests.ToListAsync();
+            return View(requests);
+        }
+      
+       
         [HttpGet]
         public IActionResult Add()
         {
@@ -33,27 +38,29 @@ namespace FirstApp.Controllers
 
         [HttpPost]
         public async Task<IActionResult> Add(AddEmployeeViewModel addEmployeeRequest)
-        //properti ini akan require paramater
-        //Add(AddEmployeeViewModel addEmployeeRequest), menerima method yang lalu diberi nama nya
+      
         {
-            //1. harus mengubah dari AddEmployeeViewModel -> AddEmployessController
-            var employee = new Employee()
+            if (ModelState.IsValid)
             {
-                EmployeeId = Guid.NewGuid(), //karena ingin menetepkan nilai id, maka require langsung dari guid
+                var employee = new Employee()
+            {
+                EmployeeId = Guid.NewGuid(), 
                 Name = addEmployeeRequest.Name,
                 EmailId = addEmployeeRequest.Email,
                 userPassword=addEmployeeRequest.userPassword,
                 Department = addEmployeeRequest.Department,
                 DateOfBirth = addEmployeeRequest.DateOfBirth,
 
-                //setelah membuat ini, saat nya memasukkan ke dlam database
+                
             };
 
             await employeeDBContext.Employees.AddAsync(employee);
             await employeeDBContext.SaveChangesAsync();
             return RedirectToAction("Index");
+            }
+              return View();         
         }
-
+        
         [HttpGet]
         public async Task<IActionResult> View(Guid id)
         {
@@ -61,7 +68,7 @@ namespace FirstApp.Controllers
 
             if(employee != null)
             {
-                // membuat variabel yang akan mengarahkan ke UpdateEmployeeViewModel
+                
                 var viewModel = new UpdateEmployeeViewModel()
                 {
                     Id = employee.EmployeeId, 
@@ -80,8 +87,9 @@ namespace FirstApp.Controllers
         [HttpPost]
         public async Task<IActionResult> View(UpdateEmployeeViewModel model)
         { 
-            // mengambil data dari databse terlebih dahalu
-            var employee = await employeeDBContext.Employees.FindAsync(model.Id);
+            if (ModelState.IsValid)
+            {
+                var employee = await employeeDBContext.Employees.FindAsync(model.Id);
 
             if (employee != null)
             { 
@@ -96,9 +104,11 @@ namespace FirstApp.Controllers
                 return RedirectToAction("Index");
             }
             return RedirectToAction("Index");
+                
+            }
+            return View();
+            
         }
-
-        [HttpPost]
         public async Task<IActionResult> Delete(UpdateEmployeeViewModel model)
         {
             var employee = await employeeDBContext.Employees.FindAsync(model.Id);  
@@ -110,8 +120,14 @@ namespace FirstApp.Controllers
                 await employeeDBContext.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
-
-            return RedirectToAction("index");
+           return RedirectToAction("Index");
         }
+        [HttpGet]
+        public async Task<IActionResult> showHistory()
+        {
+            var empolyees = await employeeDBContext.BookingHistories.ToListAsync();
+            return View(empolyees);
+        }
+        
     }
 } 

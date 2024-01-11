@@ -1,0 +1,1405 @@
+2023-05-16 22:11:38.739 +05:30 [INF] User profile is available. Using 'C:\Users\abi6\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-05-16 22:11:39.121 +05:30 [INF] Now listening on: http://localhost:5260
+2023-05-16 22:11:39.143 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-16 22:11:39.145 +05:30 [INF] Hosting environment: Development
+2023-05-16 22:11:39.145 +05:30 [INF] Content root path: C:\Users\abi6\Desktop\jwt Authentication\mvc\FirstApp
+2023-05-16 22:11:51.148 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/ - -
+2023-05-16 22:11:51.467 +05:30 [WRN] Failed to determine the https port for redirect.
+2023-05-16 22:12:01.907 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.HomeController.Index (FirstApp)'
+2023-05-16 22:12:02.744 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller FirstApp.Controllers.HomeController (FirstApp).
+2023-05-16 22:12:03.201 +05:30 [INF] Executing ViewResult, running view Index.
+2023-05-16 22:12:04.977 +05:30 [INF] Executed ViewResult - view Index executed in 2205.1955ms.
+2023-05-16 22:12:04.999 +05:30 [INF] Executed action FirstApp.Controllers.HomeController.Index (FirstApp) in 2244.3026ms
+2023-05-16 22:12:05.000 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.HomeController.Index (FirstApp)'
+2023-05-16 22:12:05.083 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/ - - - 200 - text/html;+charset=utf-8 13955.6683ms
+2023-05-16 22:12:06.308 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 22:12:06.312 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 4.5787ms
+2023-05-16 22:12:11.199 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/login - -
+2023-05-16 22:12:11.216 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:12:11.220 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login() on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 22:12:11.229 +05:30 [INF] Executing ViewResult, running view login.
+2023-05-16 22:12:12.743 +05:30 [INF] Executed ViewResult - view login executed in 1518.3105ms.
+2023-05-16 22:12:12.744 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 1523.4998ms
+2023-05-16 22:12:12.744 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:12:12.750 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/login - - - 200 - text/html;+charset=utf-8 1550.7316ms
+2023-05-16 22:12:13.154 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 22:12:13.155 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.8646ms
+2023-05-16 22:12:13.155 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/jquery.min.js - -
+2023-05-16 22:12:13.169 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/bootstrap.min.js - -
+2023-05-16 22:12:13.172 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/jquery.min.js - - - 404 0 - 16.3325ms
+2023-05-16 22:12:13.172 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/bootstrap.min.js - - - 404 0 - 2.2006ms
+2023-05-16 22:12:13.188 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/main.js - -
+2023-05-16 22:12:13.190 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/main.js - - - 404 0 - 1.4291ms
+2023-05-16 22:12:13.190 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/popper.js - -
+2023-05-16 22:12:13.192 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/popper.js - - - 404 0 - 1.5453ms
+2023-05-16 22:12:25.387 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246
+2023-05-16 22:12:25.881 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+FirstApp.Controllers.EmployeeController.Login (FirstApp)
+FirstApp.Controllers.EmployeeController.login (FirstApp)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-05-16 22:12:26.157 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246 - 500 - text/html;+charset=utf-8 770.2535ms
+2023-05-16 22:12:26.225 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 22:12:26.226 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.3086ms
+2023-05-16 22:13:22.881 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246
+2023-05-16 22:13:22.911 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+FirstApp.Controllers.EmployeeController.Login (FirstApp)
+FirstApp.Controllers.EmployeeController.login (FirstApp)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-05-16 22:13:22.916 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246 - 500 - text/html;+charset=utf-8 35.3283ms
+2023-05-16 22:13:23.060 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 22:13:23.061 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.3069ms
+2023-05-16 22:13:28.288 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/login - -
+2023-05-16 22:13:28.289 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:13:28.295 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login() on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 22:13:28.303 +05:30 [INF] Executing ViewResult, running view login.
+2023-05-16 22:13:28.326 +05:30 [INF] Executed ViewResult - view login executed in 27.7067ms.
+2023-05-16 22:13:28.327 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 30.8679ms
+2023-05-16 22:13:28.327 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:13:28.327 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/login - - - 200 - text/html;+charset=utf-8 38.7753ms
+2023-05-16 22:13:28.508 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 22:13:28.509 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.3671ms
+2023-05-16 22:13:35.653 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246
+2023-05-16 22:13:35.664 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+FirstApp.Controllers.EmployeeController.login (FirstApp)
+FirstApp.Controllers.EmployeeController.Login (FirstApp)
+FirstApp.Controllers.EmployeeController.login (FirstApp)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-05-16 22:13:35.693 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246 - 500 - text/html;+charset=utf-8 40.3827ms
+2023-05-16 22:13:35.968 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 22:13:35.968 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.3271ms
+2023-05-16 22:13:53.244 +05:30 [INF] Application is shutting down...
+2023-05-16 22:14:18.593 +05:30 [INF] User profile is available. Using 'C:\Users\abi6\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-05-16 22:14:18.861 +05:30 [INF] Now listening on: http://localhost:5260
+2023-05-16 22:14:18.881 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-16 22:14:18.882 +05:30 [INF] Hosting environment: Development
+2023-05-16 22:14:18.882 +05:30 [INF] Content root path: C:\Users\abi6\Desktop\jwt Authentication\mvc\FirstApp
+2023-05-16 22:14:20.036 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/ - -
+2023-05-16 22:14:20.112 +05:30 [WRN] Failed to determine the https port for redirect.
+2023-05-16 22:14:20.425 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.HomeController.Index (FirstApp)'
+2023-05-16 22:14:20.503 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller FirstApp.Controllers.HomeController (FirstApp).
+2023-05-16 22:14:20.537 +05:30 [INF] Executing ViewResult, running view Index.
+2023-05-16 22:14:20.882 +05:30 [INF] Executed ViewResult - view Index executed in 356.0152ms.
+2023-05-16 22:14:20.892 +05:30 [INF] Executed action FirstApp.Controllers.HomeController.Index (FirstApp) in 387.8358ms
+2023-05-16 22:14:20.893 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.HomeController.Index (FirstApp)'
+2023-05-16 22:14:20.954 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/ - - - 200 - text/html;+charset=utf-8 929.7215ms
+2023-05-16 22:14:21.511 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 22:14:21.520 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 8.7996ms
+2023-05-16 22:14:23.858 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/login - -
+2023-05-16 22:14:23.871 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:14:23.876 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login() on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 22:14:23.882 +05:30 [INF] Executing ViewResult, running view login.
+2023-05-16 22:14:24.216 +05:30 [INF] Executed ViewResult - view login executed in 336.6849ms.
+2023-05-16 22:14:24.217 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 341.0502ms
+2023-05-16 22:14:24.218 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:14:24.219 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/login - - - 200 - text/html;+charset=utf-8 361.3796ms
+2023-05-16 22:14:24.511 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/jquery.min.js - -
+2023-05-16 22:14:24.526 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/jquery.min.js - - - 404 0 - 15.0570ms
+2023-05-16 22:14:24.526 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/popper.js - -
+2023-05-16 22:14:24.527 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 22:14:24.528 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.7919ms
+2023-05-16 22:14:24.528 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/popper.js - - - 404 0 - 1.4200ms
+2023-05-16 22:14:24.528 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/main.js - -
+2023-05-16 22:14:24.528 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/bootstrap.min.js - -
+2023-05-16 22:14:24.529 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/main.js - - - 404 0 - 0.9647ms
+2023-05-16 22:14:24.529 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/bootstrap.min.js - - - 404 0 - 0.9667ms
+2023-05-16 22:14:33.297 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246
+2023-05-16 22:14:33.298 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:14:33.400 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login(FirstApp.Models.Employee, FirstApp.Models.Database) on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 22:14:35.522 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 2121.0757ms
+2023-05-16 22:14:35.523 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:14:35.677 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
+   at System.Security.Claims.Claim..ctor(String type, String value, String valueType, String issuer, String originalIssuer, ClaimsIdentity subject, String propertyKey, String propertyValue)
+   at System.Security.Claims.Claim..ctor(String type, String value)
+   at FirstApp.Controllers.EmployeeController.login(Employee employee, Database database) in C:\Users\abi6\Desktop\jwt Authentication\mvc\FirstApp\Controllers\EmployeeController.cs:line 89
+   at lambda_method30(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-05-16 22:14:35.765 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246 - 500 - text/html;+charset=utf-8 2468.0737ms
+2023-05-16 22:14:35.857 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 22:14:35.857 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.3270ms
+2023-05-16 22:19:45.279 +05:30 [INF] Application is shutting down...
+2023-05-16 22:20:12.594 +05:30 [INF] User profile is available. Using 'C:\Users\abi6\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-05-16 22:20:12.834 +05:30 [INF] Now listening on: http://localhost:5260
+2023-05-16 22:20:12.850 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-16 22:20:12.851 +05:30 [INF] Hosting environment: Development
+2023-05-16 22:20:12.851 +05:30 [INF] Content root path: C:\Users\abi6\Desktop\jwt Authentication\mvc\FirstApp
+2023-05-16 22:20:14.289 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/ - -
+2023-05-16 22:20:14.388 +05:30 [WRN] Failed to determine the https port for redirect.
+2023-05-16 22:20:14.885 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.HomeController.Index (FirstApp)'
+2023-05-16 22:20:15.077 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller FirstApp.Controllers.HomeController (FirstApp).
+2023-05-16 22:20:15.121 +05:30 [INF] Executing ViewResult, running view Index.
+2023-05-16 22:20:15.577 +05:30 [INF] Executed ViewResult - view Index executed in 467.3562ms.
+2023-05-16 22:20:15.585 +05:30 [INF] Executed action FirstApp.Controllers.HomeController.Index (FirstApp) in 506.83ms
+2023-05-16 22:20:15.586 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.HomeController.Index (FirstApp)'
+2023-05-16 22:20:15.663 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/ - - - 200 - text/html;+charset=utf-8 1381.0078ms
+2023-05-16 22:20:16.118 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 22:20:16.123 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 5.7422ms
+2023-05-16 22:20:19.772 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/login - -
+2023-05-16 22:20:19.788 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:20:19.793 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login() on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 22:20:19.800 +05:30 [INF] Executing ViewResult, running view login.
+2023-05-16 22:20:20.219 +05:30 [INF] Executed ViewResult - view login executed in 422.3238ms.
+2023-05-16 22:20:20.220 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 427.0911ms
+2023-05-16 22:20:20.221 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:20:20.225 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/login - - - 200 - text/html;+charset=utf-8 452.8022ms
+2023-05-16 22:20:20.588 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 22:20:20.589 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.9307ms
+2023-05-16 22:20:20.589 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/jquery.min.js - -
+2023-05-16 22:20:20.589 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/popper.js - -
+2023-05-16 22:20:20.596 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/bootstrap.min.js - -
+2023-05-16 22:20:20.605 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/popper.js - - - 404 0 - 15.8760ms
+2023-05-16 22:20:20.605 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/bootstrap.min.js - - - 404 0 - 8.8177ms
+2023-05-16 22:20:20.606 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/main.js - -
+2023-05-16 22:20:20.608 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/main.js - - - 404 0 - 1.5496ms
+2023-05-16 22:20:20.623 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/jquery.min.js - - - 404 0 - 33.8694ms
+2023-05-16 22:20:28.859 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246
+2023-05-16 22:20:28.860 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:20:28.956 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login(FirstApp.Models.Employee, FirstApp.Models.Database) on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 22:20:29.503 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 546.239ms
+2023-05-16 22:20:29.505 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:20:29.585 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
+   at System.Security.Claims.Claim..ctor(String type, String value, String valueType, String issuer, String originalIssuer, ClaimsIdentity subject, String propertyKey, String propertyValue)
+   at System.Security.Claims.Claim..ctor(String type, String value)
+   at FirstApp.Controllers.EmployeeController.login(Employee employee, Database database) in C:\Users\abi6\Desktop\jwt Authentication\mvc\FirstApp\Controllers\EmployeeController.cs:line 89
+   at lambda_method30(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-05-16 22:20:29.678 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246 - 500 - text/html;+charset=utf-8 818.3336ms
+2023-05-16 22:20:29.757 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 22:20:29.758 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.3583ms
+2023-05-16 22:21:55.218 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246
+2023-05-16 22:21:55.219 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:21:55.240 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login(FirstApp.Models.Employee, FirstApp.Models.Database) on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 22:21:55.284 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 43.2633ms
+2023-05-16 22:21:55.284 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:21:55.291 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
+   at System.Security.Claims.Claim..ctor(String type, String value, String valueType, String issuer, String originalIssuer, ClaimsIdentity subject, String propertyKey, String propertyValue)
+   at System.Security.Claims.Claim..ctor(String type, String value)
+   at FirstApp.Controllers.EmployeeController.login(Employee employee, Database database)
+   at lambda_method37(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-05-16 22:21:55.320 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246 - 500 - text/html;+charset=utf-8 102.0983ms
+2023-05-16 22:21:55.499 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 22:21:55.500 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.3255ms
+2023-05-16 22:22:25.326 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246
+2023-05-16 22:22:25.329 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:22:25.352 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login(FirstApp.Models.Employee, FirstApp.Models.Database) on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 22:22:25.367 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 15.2757ms
+2023-05-16 22:22:25.368 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:22:25.376 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
+   at System.Security.Claims.Claim..ctor(String type, String value, String valueType, String issuer, String originalIssuer, ClaimsIdentity subject, String propertyKey, String propertyValue)
+   at System.Security.Claims.Claim..ctor(String type, String value)
+   at FirstApp.Controllers.EmployeeController.login(Employee employee, Database database)
+   at lambda_method44(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-05-16 22:22:25.398 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246 - 500 - text/html;+charset=utf-8 71.7956ms
+2023-05-16 22:22:26.080 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 22:22:26.081 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.3298ms
+2023-05-16 22:22:50.848 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246
+2023-05-16 22:22:50.854 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:22:50.887 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login(FirstApp.Models.Employee, FirstApp.Models.Database) on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 22:22:50.908 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 20.7526ms
+2023-05-16 22:22:50.908 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:22:50.915 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
+   at System.Security.Claims.Claim..ctor(String type, String value, String valueType, String issuer, String originalIssuer, ClaimsIdentity subject, String propertyKey, String propertyValue)
+   at System.Security.Claims.Claim..ctor(String type, String value)
+   at FirstApp.Controllers.EmployeeController.login(Employee employee, Database database)
+   at lambda_method51(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-05-16 22:22:50.930 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246 - 500 - text/html;+charset=utf-8 77.4375ms
+2023-05-16 22:22:51.202 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 22:22:51.203 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.3645ms
+2023-05-16 22:23:05.663 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246
+2023-05-16 22:23:05.665 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:23:05.691 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login(FirstApp.Models.Employee, FirstApp.Models.Database) on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 22:23:07.183 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 1491.9798ms
+2023-05-16 22:23:07.184 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:23:07.220 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentOutOfRangeException: IDX10653: The encryption algorithm 'http://www.w3.org/2001/04/xmldsig-more#hmac-sha256' requires a key size of at least '128' bits. Key '[PII of type 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', is of size: '120'. (Parameter 'key')
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider..ctor(SecurityKey key, String algorithm, Boolean willCreateSignatures)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateSignatureProvider(SecurityKey key, String algorithm, Boolean willCreateSignatures, Boolean cacheProvider)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateForSigning(SecurityKey key, String algorithm, Boolean cacheProvider)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateForSigning(SecurityKey key, String algorithm)
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateJwtSecurityTokenPrivate(String issuer, String audience, ClaimsIdentity subject, Nullable`1 notBefore, Nullable`1 expires, Nullable`1 issuedAt, SigningCredentials signingCredentials, EncryptingCredentials encryptingCredentials, IDictionary`2 claimCollection, String tokenType, IDictionary`2 additionalHeaderClaims, IDictionary`2 additionalInnerHeaderClaims)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateToken(SecurityTokenDescriptor tokenDescriptor)
+   at FirstApp.Controllers.EmployeeController.login(Employee employee, Database database)
+   at lambda_method58(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-05-16 22:23:07.243 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246 - 500 - text/html;+charset=utf-8 1579.2750ms
+2023-05-16 22:23:07.437 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 22:23:07.440 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 1.7891ms
+2023-05-16 22:23:42.986 +05:30 [INF] Application is shutting down...
+2023-05-16 22:24:19.715 +05:30 [INF] User profile is available. Using 'C:\Users\abi6\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-05-16 22:24:20.075 +05:30 [INF] Now listening on: http://localhost:5260
+2023-05-16 22:24:20.096 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-16 22:24:20.097 +05:30 [INF] Hosting environment: Development
+2023-05-16 22:24:20.103 +05:30 [INF] Content root path: C:\Users\abi6\Desktop\jwt Authentication\mvc\FirstApp
+2023-05-16 22:24:21.635 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/ - -
+2023-05-16 22:24:21.832 +05:30 [WRN] Failed to determine the https port for redirect.
+2023-05-16 22:24:22.223 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.HomeController.Index (FirstApp)'
+2023-05-16 22:24:22.323 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller FirstApp.Controllers.HomeController (FirstApp).
+2023-05-16 22:24:22.375 +05:30 [INF] Executing ViewResult, running view Index.
+2023-05-16 22:24:22.780 +05:30 [INF] Executed ViewResult - view Index executed in 430.755ms.
+2023-05-16 22:24:22.786 +05:30 [INF] Executed action FirstApp.Controllers.HomeController.Index (FirstApp) in 461.1751ms
+2023-05-16 22:24:22.786 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.HomeController.Index (FirstApp)'
+2023-05-16 22:24:22.861 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/ - - - 200 - text/html;+charset=utf-8 1233.5918ms
+2023-05-16 22:24:23.516 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 22:24:23.534 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 17.6995ms
+2023-05-16 22:24:25.589 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/login - -
+2023-05-16 22:24:25.607 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:24:25.617 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login() on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 22:24:25.625 +05:30 [INF] Executing ViewResult, running view login.
+2023-05-16 22:24:26.004 +05:30 [INF] Executed ViewResult - view login executed in 381.9348ms.
+2023-05-16 22:24:26.005 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 388.1597ms
+2023-05-16 22:24:26.005 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:24:26.009 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/login - - - 200 - text/html;+charset=utf-8 419.9699ms
+2023-05-16 22:24:26.501 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/jquery.min.js - -
+2023-05-16 22:24:26.516 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/jquery.min.js - - - 404 0 - 15.2408ms
+2023-05-16 22:24:26.517 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/popper.js - -
+2023-05-16 22:24:26.518 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/popper.js - - - 404 0 - 1.6793ms
+2023-05-16 22:24:26.519 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 22:24:26.520 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 1.4912ms
+2023-05-16 22:24:26.546 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/bootstrap.min.js - -
+2023-05-16 22:24:26.550 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/bootstrap.min.js - - - 404 0 - 3.4407ms
+2023-05-16 22:24:26.557 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/main.js - -
+2023-05-16 22:24:26.559 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/main.js - - - 404 0 - 1.7259ms
+2023-05-16 22:24:35.392 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246
+2023-05-16 22:24:35.393 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:24:35.459 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login(FirstApp.Models.Employee, FirstApp.Models.Database) on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 22:24:36.226 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 766.9018ms
+2023-05-16 22:24:36.227 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:24:36.324 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentOutOfRangeException: IDX10653: The encryption algorithm 'http://www.w3.org/2001/04/xmldsig-more#hmac-sha256' requires a key size of at least '128' bits. Key '[PII of type 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', is of size: '120'. (Parameter 'key')
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider..ctor(SecurityKey key, String algorithm, Boolean willCreateSignatures)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateSignatureProvider(SecurityKey key, String algorithm, Boolean willCreateSignatures, Boolean cacheProvider)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateForSigning(SecurityKey key, String algorithm, Boolean cacheProvider)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateForSigning(SecurityKey key, String algorithm)
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateJwtSecurityTokenPrivate(String issuer, String audience, ClaimsIdentity subject, Nullable`1 notBefore, Nullable`1 expires, Nullable`1 issuedAt, SigningCredentials signingCredentials, EncryptingCredentials encryptingCredentials, IDictionary`2 claimCollection, String tokenType, IDictionary`2 additionalHeaderClaims, IDictionary`2 additionalInnerHeaderClaims)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateToken(SecurityTokenDescriptor tokenDescriptor)
+   at FirstApp.Controllers.EmployeeController.login(Employee employee, Database database) in C:\Users\abi6\Desktop\jwt Authentication\mvc\FirstApp\Controllers\EmployeeController.cs:line 98
+   at lambda_method30(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-05-16 22:24:36.441 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246 - 500 - text/html;+charset=utf-8 1049.1734ms
+2023-05-16 22:24:36.526 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 22:24:36.527 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.4610ms
+2023-05-16 22:25:12.268 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246
+2023-05-16 22:25:12.279 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:25:12.343 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login(FirstApp.Models.Employee, FirstApp.Models.Database) on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 22:25:12.405 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 61.9251ms
+2023-05-16 22:25:12.406 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:25:12.475 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentOutOfRangeException: IDX10653: The encryption algorithm 'http://www.w3.org/2001/04/xmldsig-more#hmac-sha256' requires a key size of at least '128' bits. Key '[PII of type 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', is of size: '120'. (Parameter 'key')
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider..ctor(SecurityKey key, String algorithm, Boolean willCreateSignatures)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateSignatureProvider(SecurityKey key, String algorithm, Boolean willCreateSignatures, Boolean cacheProvider)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateForSigning(SecurityKey key, String algorithm, Boolean cacheProvider)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateForSigning(SecurityKey key, String algorithm)
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateJwtSecurityTokenPrivate(String issuer, String audience, ClaimsIdentity subject, Nullable`1 notBefore, Nullable`1 expires, Nullable`1 issuedAt, SigningCredentials signingCredentials, EncryptingCredentials encryptingCredentials, IDictionary`2 claimCollection, String tokenType, IDictionary`2 additionalHeaderClaims, IDictionary`2 additionalInnerHeaderClaims)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateToken(SecurityTokenDescriptor tokenDescriptor)
+   at FirstApp.Controllers.EmployeeController.login(Employee employee, Database database)
+   at lambda_method37(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-05-16 22:25:12.496 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246 - 500 - text/html;+charset=utf-8 227.3811ms
+2023-05-16 22:25:13.942 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 22:25:13.942 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.3065ms
+2023-05-16 22:28:25.964 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246
+2023-05-16 22:28:25.967 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:28:25.985 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login(FirstApp.Models.Employee, FirstApp.Models.Database) on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 22:28:26.093 +05:30 [INF] Executing RedirectResult, redirecting to /Dashboard?EmployeeId=00000000-0000-0000-0000-000000000000&EmailId=abinashabinash711@gmail.com&userPassword=Abinash@24&DateOfBirth=01%2F01%2F0001%2000%3A00%3A00.
+2023-05-16 22:28:26.119 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 133.21ms
+2023-05-16 22:28:26.119 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:28:26.127 +05:30 [INF] Session started; Key:45590686-e502-446c-b4e8-612f7aa58168, Id:050f95c4-165a-676c-0ff6-7b6d697c84ef
+2023-05-16 22:28:26.129 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246 - 302 0 - 165.2346ms
+2023-05-16 22:28:26.176 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Dashboard?EmployeeId=00000000-0000-0000-0000-000000000000&EmailId=abinashabinash711@gmail.com&userPassword=Abinash@24&DateOfBirth=01%2F01%2F0001%2000%3A00%3A00 - -
+2023-05-16 22:28:26.186 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-05-16 22:28:26.197 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2023-05-16 22:28:26.197 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Dashboard?EmployeeId=00000000-0000-0000-0000-000000000000&EmailId=abinashabinash711@gmail.com&userPassword=Abinash@24&DateOfBirth=01%2F01%2F0001%2000%3A00%3A00 - - - 401 0 - 21.0497ms
+2023-05-16 22:28:31.927 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Dashboard?EmployeeId=00000000-0000-0000-0000-000000000000&EmailId=abinashabinash711@gmail.com&userPassword=Abinash@24&DateOfBirth=01%2F01%2F0001%2000%3A00%3A00 - -
+2023-05-16 22:28:31.934 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-05-16 22:28:31.936 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2023-05-16 22:28:31.936 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Dashboard?EmployeeId=00000000-0000-0000-0000-000000000000&EmailId=abinashabinash711@gmail.com&userPassword=Abinash@24&DateOfBirth=01%2F01%2F0001%2000%3A00%3A00 - - - 401 0 - 8.6177ms
+2023-05-16 22:28:34.567 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Dashboard?EmployeeId=00000000-0000-0000-0000-000000000000&EmailId=abinashabinash711@gmail.com&userPassword=Abinash@24&DateOfBirth=01%2F01%2F0001%2000%3A00%3A00 - -
+2023-05-16 22:28:34.576 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-05-16 22:28:34.577 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2023-05-16 22:28:34.577 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Dashboard?EmployeeId=00000000-0000-0000-0000-000000000000&EmailId=abinashabinash711@gmail.com&userPassword=Abinash@24&DateOfBirth=01%2F01%2F0001%2000%3A00%3A00 - - - 401 0 - 10.3323ms
+2023-05-16 22:28:35.816 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Dashboard?EmployeeId=00000000-0000-0000-0000-000000000000&EmailId=abinashabinash711@gmail.com&userPassword=Abinash@24&DateOfBirth=01%2F01%2F0001%2000%3A00%3A00 - -
+2023-05-16 22:28:35.817 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-05-16 22:28:35.817 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2023-05-16 22:28:35.817 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Dashboard?EmployeeId=00000000-0000-0000-0000-000000000000&EmailId=abinashabinash711@gmail.com&userPassword=Abinash@24&DateOfBirth=01%2F01%2F0001%2000%3A00%3A00 - - - 401 0 - 1.0790ms
+2023-05-16 22:28:46.474 +05:30 [INF] Application is shutting down...
+2023-05-16 22:29:36.324 +05:30 [INF] User profile is available. Using 'C:\Users\abi6\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-05-16 22:29:36.508 +05:30 [INF] Now listening on: http://localhost:5260
+2023-05-16 22:29:36.520 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-16 22:29:36.522 +05:30 [INF] Hosting environment: Development
+2023-05-16 22:29:36.522 +05:30 [INF] Content root path: C:\Users\abi6\Desktop\jwt Authentication\mvc\FirstApp
+2023-05-16 22:29:38.055 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/ - -
+2023-05-16 22:29:38.193 +05:30 [WRN] Failed to determine the https port for redirect.
+2023-05-16 22:29:38.518 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.HomeController.Index (FirstApp)'
+2023-05-16 22:29:38.613 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller FirstApp.Controllers.HomeController (FirstApp).
+2023-05-16 22:29:38.662 +05:30 [INF] Executing ViewResult, running view Index.
+2023-05-16 22:29:39.068 +05:30 [INF] Executed ViewResult - view Index executed in 424.7593ms.
+2023-05-16 22:29:39.073 +05:30 [INF] Executed action FirstApp.Controllers.HomeController.Index (FirstApp) in 457.0193ms
+2023-05-16 22:29:39.074 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.HomeController.Index (FirstApp)'
+2023-05-16 22:29:39.118 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/ - - - 200 - text/html;+charset=utf-8 1120.3343ms
+2023-05-16 22:29:39.596 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 22:29:39.602 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 5.5288ms
+2023-05-16 22:29:41.819 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/login - -
+2023-05-16 22:29:41.834 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:29:41.840 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login() on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 22:29:41.847 +05:30 [INF] Executing ViewResult, running view login.
+2023-05-16 22:29:42.148 +05:30 [INF] Executed ViewResult - view login executed in 303.8709ms.
+2023-05-16 22:29:42.149 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 308.9593ms
+2023-05-16 22:29:42.150 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:29:42.154 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/login - - - 200 - text/html;+charset=utf-8 335.3314ms
+2023-05-16 22:29:42.513 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 22:29:42.514 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/jquery.min.js - -
+2023-05-16 22:29:42.514 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.8567ms
+2023-05-16 22:29:42.514 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/popper.js - -
+2023-05-16 22:29:42.519 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/bootstrap.min.js - -
+2023-05-16 22:29:42.523 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/main.js - -
+2023-05-16 22:29:42.525 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/main.js - - - 404 0 - 2.2656ms
+2023-05-16 22:29:42.526 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/bootstrap.min.js - - - 404 0 - 6.3039ms
+2023-05-16 22:29:42.526 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/jquery.min.js - - - 404 0 - 12.0076ms
+2023-05-16 22:29:42.526 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/popper.js - - - 404 0 - 11.3991ms
+2023-05-16 22:29:57.126 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246
+2023-05-16 22:29:57.128 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:29:57.169 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login(FirstApp.Models.Employee, FirstApp.Models.Database) on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 22:29:58.023 +05:30 [INF] Executing RedirectResult, redirecting to /Dashboard?EmployeeId=00000000-0000-0000-0000-000000000000&EmailId=abinashabinash711@gmail.com&userPassword=Abinash@24&DateOfBirth=01%2F01%2F0001%2000%3A00%3A00.
+2023-05-16 22:29:58.025 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 856.0092ms
+2023-05-16 22:29:58.025 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:29:58.031 +05:30 [INF] Session started; Key:dce83745-68a8-51ad-793f-a45ccfb50099, Id:6867a9e5-c1e7-2dd1-59ac-00ceee2fcf68
+2023-05-16 22:29:58.032 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246 - 302 0 - 906.0274ms
+2023-05-16 22:29:58.039 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Dashboard?EmployeeId=00000000-0000-0000-0000-000000000000&EmailId=abinashabinash711@gmail.com&userPassword=Abinash@24&DateOfBirth=01%2F01%2F0001%2000%3A00%3A00 - -
+2023-05-16 22:29:58.048 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-05-16 22:29:58.054 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2023-05-16 22:29:58.054 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Dashboard?EmployeeId=00000000-0000-0000-0000-000000000000&EmailId=abinashabinash711@gmail.com&userPassword=Abinash@24&DateOfBirth=01%2F01%2F0001%2000%3A00%3A00 - - - 401 0 - 15.0060ms
+2023-05-16 22:38:06.279 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Dashboard?EmployeeId=00000000-0000-0000-0000-000000000000&EmailId=abinashabinash711@gmail.com&userPassword=Abinash@24&DateOfBirth=01%2F01%2F0001%2000%3A00%3A00 - -
+2023-05-16 22:38:06.289 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-05-16 22:38:06.290 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2023-05-16 22:38:06.291 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Dashboard?EmployeeId=00000000-0000-0000-0000-000000000000&EmailId=abinashabinash711@gmail.com&userPassword=Abinash@24&DateOfBirth=01%2F01%2F0001%2000%3A00%3A00 - - - 401 0 - 14.8451ms
+2023-05-16 22:38:07.234 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Dashboard?EmployeeId=00000000-0000-0000-0000-000000000000&EmailId=abinashabinash711@gmail.com&userPassword=Abinash@24&DateOfBirth=01%2F01%2F0001%2000%3A00%3A00 - -
+2023-05-16 22:38:07.240 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-05-16 22:38:07.241 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2023-05-16 22:38:07.241 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Dashboard?EmployeeId=00000000-0000-0000-0000-000000000000&EmailId=abinashabinash711@gmail.com&userPassword=Abinash@24&DateOfBirth=01%2F01%2F0001%2000%3A00%3A00 - - - 401 0 - 6.7023ms
+2023-05-16 22:38:08.524 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/login - -
+2023-05-16 22:38:08.525 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:38:08.529 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login() on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 22:38:08.591 +05:30 [INF] Executing ViewResult, running view login.
+2023-05-16 22:38:08.612 +05:30 [INF] Executed ViewResult - view login executed in 22.9308ms.
+2023-05-16 22:38:08.612 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 83.4553ms
+2023-05-16 22:38:08.613 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:38:08.613 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/login - - - 200 - text/html;+charset=utf-8 89.7950ms
+2023-05-16 22:38:09.087 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 22:38:09.092 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 4.2864ms
+2023-05-16 22:38:17.580 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246
+2023-05-16 22:38:17.585 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:38:17.606 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login(FirstApp.Models.Employee, FirstApp.Models.Database) on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 22:38:17.737 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType4`3[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-05-16 22:38:17.786 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 179.9581ms
+2023-05-16 22:38:17.786 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:38:17.787 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246 - 200 - application/json;+charset=utf-8 207.1712ms
+2023-05-16 22:39:08.033 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246
+2023-05-16 22:39:08.034 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:39:08.053 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login(FirstApp.Models.Employee, FirstApp.Models.Database) on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 22:39:08.075 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType4`3[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-05-16 22:39:08.079 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 25.2352ms
+2023-05-16 22:39:08.079 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:39:08.079 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246 - 200 - application/json;+charset=utf-8 46.3069ms
+2023-05-16 22:39:48.863 +05:30 [INF] Application is shutting down...
+2023-05-16 22:40:31.116 +05:30 [INF] User profile is available. Using 'C:\Users\abi6\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-05-16 22:40:31.394 +05:30 [INF] Now listening on: http://localhost:5260
+2023-05-16 22:40:31.412 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-16 22:40:31.413 +05:30 [INF] Hosting environment: Development
+2023-05-16 22:40:31.413 +05:30 [INF] Content root path: C:\Users\abi6\Desktop\jwt Authentication\mvc\FirstApp
+2023-05-16 22:40:33.467 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/ - -
+2023-05-16 22:40:33.817 +05:30 [WRN] Failed to determine the https port for redirect.
+2023-05-16 22:40:34.578 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.HomeController.Index (FirstApp)'
+2023-05-16 22:40:34.798 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller FirstApp.Controllers.HomeController (FirstApp).
+2023-05-16 22:40:34.867 +05:30 [INF] Executing ViewResult, running view Index.
+2023-05-16 22:40:35.697 +05:30 [INF] Executed ViewResult - view Index executed in 849.9285ms.
+2023-05-16 22:40:35.703 +05:30 [INF] Executed action FirstApp.Controllers.HomeController.Index (FirstApp) in 903.1551ms
+2023-05-16 22:40:35.703 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.HomeController.Index (FirstApp)'
+2023-05-16 22:40:35.816 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/ - - - 200 - text/html;+charset=utf-8 2364.8083ms
+2023-05-16 22:40:36.730 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 22:40:36.746 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 16.0166ms
+2023-05-16 22:40:46.231 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/login - -
+2023-05-16 22:40:46.251 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:40:46.262 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login() on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 22:40:46.288 +05:30 [INF] Executing ViewResult, running view login.
+2023-05-16 22:40:47.083 +05:30 [INF] Executed ViewResult - view login executed in 816.2214ms.
+2023-05-16 22:40:47.085 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 822.9114ms
+2023-05-16 22:40:47.085 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:40:47.093 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/login - - - 200 - text/html;+charset=utf-8 862.2211ms
+2023-05-16 22:40:47.565 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 22:40:47.566 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.7522ms
+2023-05-16 22:40:47.566 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/jquery.min.js - -
+2023-05-16 22:40:47.582 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/jquery.min.js - - - 404 0 - 15.4750ms
+2023-05-16 22:40:47.582 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/popper.js - -
+2023-05-16 22:40:47.585 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/popper.js - - - 404 0 - 2.3831ms
+2023-05-16 22:40:47.585 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/bootstrap.min.js - -
+2023-05-16 22:40:47.587 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/bootstrap.min.js - - - 404 0 - 1.5038ms
+2023-05-16 22:40:47.588 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/main.js - -
+2023-05-16 22:40:47.589 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/main.js - - - 404 0 - 1.1100ms
+2023-05-16 22:40:57.204 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246
+2023-05-16 22:40:57.205 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:40:57.282 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login(FirstApp.Models.Employee, FirstApp.Models.Database) on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 22:40:58.714 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-05-16 22:40:58.799 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 1516.3125ms
+2023-05-16 22:40:58.799 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:40:58.802 +05:30 [INF] Session started; Key:8495afc7-9897-3f5b-6aff-a46158cc7bc3, Id:058aa7e6-a29a-ea4b-ff08-3713f8dee462
+2023-05-16 22:40:58.805 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246 - 200 - application/json;+charset=utf-8 1601.1427ms
+2023-05-16 22:42:03.788 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246
+2023-05-16 22:42:03.797 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:42:03.865 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login(FirstApp.Models.Employee, FirstApp.Models.Database) on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 22:42:03.921 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-05-16 22:42:03.936 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 70.7017ms
+2023-05-16 22:42:03.936 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:42:03.941 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246 - 200 - application/json;+charset=utf-8 152.7235ms
+2023-05-16 22:42:09.437 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246
+2023-05-16 22:42:09.448 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:42:09.449 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login(FirstApp.Models.Employee, FirstApp.Models.Database) on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 22:42:09.461 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-05-16 22:42:09.461 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 12.5267ms
+2023-05-16 22:42:09.462 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:42:09.463 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246 - 200 - application/json;+charset=utf-8 25.1697ms
+2023-05-16 22:42:15.493 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/login - -
+2023-05-16 22:42:15.494 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:42:15.496 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login() on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 22:42:15.500 +05:30 [INF] Executing ViewResult, running view login.
+2023-05-16 22:42:15.517 +05:30 [INF] Executed ViewResult - view login executed in 20.1113ms.
+2023-05-16 22:42:15.517 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 21.1455ms
+2023-05-16 22:42:15.518 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:42:15.518 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/login - - - 200 - text/html;+charset=utf-8 24.8288ms
+2023-05-16 22:42:15.757 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 22:42:15.757 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.3348ms
+2023-05-16 22:42:28.871 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/login - -
+2023-05-16 22:42:28.872 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:42:28.882 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login() on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 22:42:28.884 +05:30 [INF] Executing ViewResult, running view login.
+2023-05-16 22:42:28.900 +05:30 [INF] Executed ViewResult - view login executed in 18.0745ms.
+2023-05-16 22:42:28.901 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 18.9697ms
+2023-05-16 22:42:28.901 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:42:28.902 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/login - - - 200 - text/html;+charset=utf-8 30.6186ms
+2023-05-16 22:42:29.083 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/jquery.min.js - -
+2023-05-16 22:42:29.101 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/jquery.min.js - - - 404 0 - 18.8083ms
+2023-05-16 22:42:29.103 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/popper.js - -
+2023-05-16 22:42:29.104 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/popper.js - - - 404 0 - 1.3051ms
+2023-05-16 22:42:29.471 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 22:42:29.472 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.3418ms
+2023-05-16 22:42:29.472 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/bootstrap.min.js - -
+2023-05-16 22:42:29.473 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/bootstrap.min.js - - - 404 0 - 1.0906ms
+2023-05-16 22:42:29.494 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/main.js - -
+2023-05-16 22:42:29.507 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/main.js - - - 404 0 - 13.2584ms
+2023-05-16 22:42:38.270 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246
+2023-05-16 22:42:38.271 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:42:38.291 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login(FirstApp.Models.Employee, FirstApp.Models.Database) on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 22:42:38.308 +05:30 [INF] Executing RedirectResult, redirecting to /Dashboard?EmployeeId=00000000-0000-0000-0000-000000000000&EmailId=abinashabinash711@gmail.com&userPassword=Abinash@24&DateOfBirth=01%2F01%2F0001%2000%3A00%3A00.
+2023-05-16 22:42:38.308 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 16.4778ms
+2023-05-16 22:42:38.308 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:42:38.308 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246 - 302 0 - 38.5330ms
+2023-05-16 22:42:38.318 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Dashboard?EmployeeId=00000000-0000-0000-0000-000000000000&EmailId=abinashabinash711@gmail.com&userPassword=Abinash@24&DateOfBirth=01%2F01%2F0001%2000%3A00%3A00 - -
+2023-05-16 22:42:38.330 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-05-16 22:42:38.336 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2023-05-16 22:42:38.336 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Dashboard?EmployeeId=00000000-0000-0000-0000-000000000000&EmailId=abinashabinash711@gmail.com&userPassword=Abinash@24&DateOfBirth=01%2F01%2F0001%2000%3A00%3A00 - - - 401 0 - 18.4878ms
+2023-05-16 22:43:01.087 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/login - -
+2023-05-16 22:43:01.088 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:43:01.090 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login() on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 22:43:01.093 +05:30 [INF] Executing ViewResult, running view login.
+2023-05-16 22:43:01.110 +05:30 [INF] Executed ViewResult - view login executed in 19.57ms.
+2023-05-16 22:43:01.111 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 20.1125ms
+2023-05-16 22:43:01.111 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:43:01.111 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/login - - - 200 - text/html;+charset=utf-8 23.9195ms
+2023-05-16 22:43:02.108 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 22:43:02.108 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.2253ms
+2023-05-16 22:43:11.243 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246
+2023-05-16 22:43:11.254 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:43:11.275 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login(FirstApp.Models.Employee, FirstApp.Models.Database) on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 22:43:11.288 +05:30 [INF] Executing RedirectResult, redirecting to /Dashboard?EmployeeId=00000000-0000-0000-0000-000000000000&EmailId=abinashabinash711@gmail.com&userPassword=Abinash@24&DateOfBirth=01%2F01%2F0001%2000%3A00%3A00.
+2023-05-16 22:43:11.289 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 13.756ms
+2023-05-16 22:43:11.290 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:43:11.291 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246 - 302 0 - 47.2707ms
+2023-05-16 22:43:11.300 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Dashboard?EmployeeId=00000000-0000-0000-0000-000000000000&EmailId=abinashabinash711@gmail.com&userPassword=Abinash@24&DateOfBirth=01%2F01%2F0001%2000%3A00%3A00 - -
+2023-05-16 22:43:11.302 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.DashboardController.Index (FirstApp)'
+2023-05-16 22:43:11.307 +05:30 [INF] Route matched with {action = "Index", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(FirstApp.Models.Employee) on controller FirstApp.Controllers.DashboardController (FirstApp).
+2023-05-16 22:43:13.087 +05:30 [INF] Executing ViewResult, running view Index.
+2023-05-16 22:43:13.139 +05:30 [INF] Executed ViewResult - view Index executed in 55.0771ms.
+2023-05-16 22:43:13.139 +05:30 [INF] Executed action FirstApp.Controllers.DashboardController.Index (FirstApp) in 1832.2125ms
+2023-05-16 22:43:13.139 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.DashboardController.Index (FirstApp)'
+2023-05-16 22:43:13.144 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Dashboard?EmployeeId=00000000-0000-0000-0000-000000000000&EmailId=abinashabinash711@gmail.com&userPassword=Abinash@24&DateOfBirth=01%2F01%2F0001%2000%3A00%3A00 - - - 200 - text/html;+charset=utf-8 1844.0783ms
+2023-05-16 22:43:13.549 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 22:43:13.549 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.3786ms
+2023-05-16 22:43:30.626 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/login - -
+2023-05-16 22:43:30.626 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:43:30.627 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login() on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 22:43:30.628 +05:30 [INF] Executing ViewResult, running view login.
+2023-05-16 22:43:30.632 +05:30 [INF] Executed ViewResult - view login executed in 4.4267ms.
+2023-05-16 22:43:30.632 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 5.0581ms
+2023-05-16 22:43:30.632 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:43:30.632 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/login - - - 200 - text/html;+charset=utf-8 6.2580ms
+2023-05-16 22:43:30.839 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 22:43:30.840 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.4767ms
+2023-05-16 22:43:40.829 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/login - -
+2023-05-16 22:43:40.832 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:43:40.843 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login() on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 22:43:40.848 +05:30 [INF] Executing ViewResult, running view login.
+2023-05-16 22:43:40.906 +05:30 [INF] Executed ViewResult - view login executed in 61.1542ms.
+2023-05-16 22:43:40.906 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 62.2933ms
+2023-05-16 22:43:40.906 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:43:40.909 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/login - - - 200 - text/html;+charset=utf-8 78.4867ms
+2023-05-16 22:43:41.365 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/jquery.min.js - -
+2023-05-16 22:43:41.373 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/jquery.min.js - - - 404 0 - 7.5370ms
+2023-05-16 22:43:41.410 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/popper.js - -
+2023-05-16 22:43:41.411 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/popper.js - - - 404 0 - 1.2476ms
+2023-05-16 22:43:41.704 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/bootstrap.min.js - -
+2023-05-16 22:43:41.705 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/bootstrap.min.js - - - 404 0 - 1.3894ms
+2023-05-16 22:43:41.712 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/main.js - -
+2023-05-16 22:43:41.713 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/main.js - - - 404 0 - 0.8402ms
+2023-05-16 22:43:41.744 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 22:43:41.745 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.2316ms
+2023-05-16 22:46:42.480 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/login - -
+2023-05-16 22:46:42.482 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:46:42.486 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login() on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 22:46:42.492 +05:30 [INF] Executing ViewResult, running view login.
+2023-05-16 22:46:42.518 +05:30 [INF] Executed ViewResult - view login executed in 32.0817ms.
+2023-05-16 22:46:42.518 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 32.742ms
+2023-05-16 22:46:42.519 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:46:42.519 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/login - - - 200 - text/html;+charset=utf-8 39.4991ms
+2023-05-16 22:46:44.070 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/jquery.min.js - -
+2023-05-16 22:46:44.070 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/popper.js - -
+2023-05-16 22:46:44.076 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/popper.js - - - 404 0 - 6.2576ms
+2023-05-16 22:46:44.079 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/jquery.min.js - - - 404 0 - 9.3065ms
+2023-05-16 22:46:44.173 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/bootstrap.min.js - -
+2023-05-16 22:46:44.174 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/bootstrap.min.js - - - 404 0 - 0.8833ms
+2023-05-16 22:46:44.282 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/main.js - -
+2023-05-16 22:46:44.283 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/main.js - - - 404 0 - 1.0297ms
+2023-05-16 22:46:44.301 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 22:46:44.302 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.2637ms
+2023-05-16 22:46:55.680 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/login - -
+2023-05-16 22:46:55.683 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:46:55.687 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login() on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 22:46:55.692 +05:30 [INF] Executing ViewResult, running view login.
+2023-05-16 22:46:55.701 +05:30 [INF] Executed ViewResult - view login executed in 13.0104ms.
+2023-05-16 22:46:55.701 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 13.5324ms
+2023-05-16 22:46:55.701 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:46:55.702 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/login - - - 200 - text/html;+charset=utf-8 21.2868ms
+2023-05-16 22:46:55.885 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/jquery.min.js - -
+2023-05-16 22:46:55.892 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/jquery.min.js - - - 404 0 - 7.8914ms
+2023-05-16 22:46:55.903 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/popper.js - -
+2023-05-16 22:46:55.904 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/popper.js - - - 404 0 - 0.7873ms
+2023-05-16 22:46:57.929 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/bootstrap.min.js - -
+2023-05-16 22:46:57.930 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/bootstrap.min.js - - - 404 0 - 0.9434ms
+2023-05-16 22:46:57.938 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/main.js - -
+2023-05-16 22:46:57.939 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/main.js - - - 404 0 - 0.7294ms
+2023-05-16 22:46:58.184 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 22:46:58.185 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.2222ms
+2023-05-16 22:47:00.857 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/login - -
+2023-05-16 22:47:00.862 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:47:00.865 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login() on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 22:47:00.868 +05:30 [INF] Executing ViewResult, running view login.
+2023-05-16 22:47:00.895 +05:30 [INF] Executed ViewResult - view login executed in 29.2302ms.
+2023-05-16 22:47:00.895 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 30.295ms
+2023-05-16 22:47:00.896 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:47:00.897 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/login - - - 200 - text/html;+charset=utf-8 39.8817ms
+2023-05-16 22:47:01.409 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/jquery.min.js - -
+2023-05-16 22:47:01.412 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/popper.js - -
+2023-05-16 22:47:01.415 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/jquery.min.js - - - 404 0 - 6.2492ms
+2023-05-16 22:47:01.416 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/popper.js - - - 404 0 - 3.7898ms
+2023-05-16 22:47:01.478 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/bootstrap.min.js - -
+2023-05-16 22:47:01.479 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/bootstrap.min.js - - - 404 0 - 0.8597ms
+2023-05-16 22:47:01.612 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/main.js - -
+2023-05-16 22:47:01.612 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/main.js - - - 404 0 - 0.7232ms
+2023-05-16 22:47:01.622 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 22:47:01.622 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.2408ms
+2023-05-16 22:47:20.250 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246
+2023-05-16 22:47:20.250 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:47:20.268 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login(FirstApp.Models.Employee, FirstApp.Models.Database) on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 22:47:20.292 +05:30 [INF] Executing RedirectResult, redirecting to /Dashboard?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFiaW5hc2hhYmluYXNoNzExQGdtYWlsLmNvbSIsIm5iZiI6MTY4NDI1NzQ0MCwiZXhwIjoxNjg0ODYyMjQwLCJpYXQiOjE2ODQyNTc0NDB9.QiVtKDuq_Ub3Z_kCnqiEhApvoBBkGKUCGKCRXayjp94.
+2023-05-16 22:47:20.292 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 24.2461ms
+2023-05-16 22:47:20.292 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:47:20.293 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246 - 302 0 - 42.5767ms
+2023-05-16 22:47:20.301 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Dashboard?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFiaW5hc2hhYmluYXNoNzExQGdtYWlsLmNvbSIsIm5iZiI6MTY4NDI1NzQ0MCwiZXhwIjoxNjg0ODYyMjQwLCJpYXQiOjE2ODQyNTc0NDB9.QiVtKDuq_Ub3Z_kCnqiEhApvoBBkGKUCGKCRXayjp94 - -
+2023-05-16 22:47:20.307 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-05-16 22:47:20.309 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2023-05-16 22:47:20.309 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Dashboard?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFiaW5hc2hhYmluYXNoNzExQGdtYWlsLmNvbSIsIm5iZiI6MTY4NDI1NzQ0MCwiZXhwIjoxNjg0ODYyMjQwLCJpYXQiOjE2ODQyNTc0NDB9.QiVtKDuq_Ub3Z_kCnqiEhApvoBBkGKUCGKCRXayjp94 - - - 401 0 - 8.2219ms
+2023-05-16 22:47:22.545 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Dashboard?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFiaW5hc2hhYmluYXNoNzExQGdtYWlsLmNvbSIsIm5iZiI6MTY4NDI1NzQ0MCwiZXhwIjoxNjg0ODYyMjQwLCJpYXQiOjE2ODQyNTc0NDB9.QiVtKDuq_Ub3Z_kCnqiEhApvoBBkGKUCGKCRXayjp94 - -
+2023-05-16 22:47:22.555 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-05-16 22:47:22.555 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2023-05-16 22:47:22.555 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Dashboard?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFiaW5hc2hhYmluYXNoNzExQGdtYWlsLmNvbSIsIm5iZiI6MTY4NDI1NzQ0MCwiZXhwIjoxNjg0ODYyMjQwLCJpYXQiOjE2ODQyNTc0NDB9.QiVtKDuq_Ub3Z_kCnqiEhApvoBBkGKUCGKCRXayjp94 - - - 401 0 - 10.6843ms
+2023-05-16 22:49:08.583 +05:30 [INF] Application is shutting down...
+2023-05-16 22:50:00.173 +05:30 [INF] User profile is available. Using 'C:\Users\abi6\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-05-16 22:50:00.401 +05:30 [INF] Now listening on: http://localhost:5260
+2023-05-16 22:50:00.419 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-16 22:50:00.420 +05:30 [INF] Hosting environment: Development
+2023-05-16 22:50:00.420 +05:30 [INF] Content root path: C:\Users\abi6\Desktop\jwt Authentication\mvc\FirstApp
+2023-05-16 22:50:02.205 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/ - -
+2023-05-16 22:50:02.334 +05:30 [WRN] Failed to determine the https port for redirect.
+2023-05-16 22:50:03.054 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.HomeController.Index (FirstApp)'
+2023-05-16 22:50:03.401 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller FirstApp.Controllers.HomeController (FirstApp).
+2023-05-16 22:50:03.470 +05:30 [INF] Executing ViewResult, running view Index.
+2023-05-16 22:50:04.118 +05:30 [INF] Executed ViewResult - view Index executed in 667.2837ms.
+2023-05-16 22:50:04.135 +05:30 [INF] Executed action FirstApp.Controllers.HomeController.Index (FirstApp) in 726.5045ms
+2023-05-16 22:50:04.136 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.HomeController.Index (FirstApp)'
+2023-05-16 22:50:04.213 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/ - - - 200 - text/html;+charset=utf-8 2023.1027ms
+2023-05-16 22:50:05.163 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 22:50:05.174 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 10.8658ms
+2023-05-16 22:50:07.171 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/login - -
+2023-05-16 22:50:07.208 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:50:07.218 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login() on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 22:50:07.255 +05:30 [INF] Executing ViewResult, running view login.
+2023-05-16 22:50:07.977 +05:30 [INF] Executed ViewResult - view login executed in 726.4319ms.
+2023-05-16 22:50:07.979 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 760.231ms
+2023-05-16 22:50:07.979 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:50:07.983 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/login - - - 200 - text/html;+charset=utf-8 812.4376ms
+2023-05-16 22:50:08.492 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 22:50:08.497 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 4.7225ms
+2023-05-16 22:50:08.501 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/popper.js - -
+2023-05-16 22:50:08.507 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/jquery.min.js - -
+2023-05-16 22:50:08.517 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/popper.js - - - 404 0 - 15.9828ms
+2023-05-16 22:50:08.518 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/bootstrap.min.js - -
+2023-05-16 22:50:08.520 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/bootstrap.min.js - - - 404 0 - 2.0466ms
+2023-05-16 22:50:08.520 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/main.js - -
+2023-05-16 22:50:08.522 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/main.js - - - 404 0 - 1.7552ms
+2023-05-16 22:50:08.541 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/jquery.min.js - - - 404 0 - 33.7747ms
+2023-05-16 22:50:17.935 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246
+2023-05-16 22:50:17.936 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:50:18.003 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login(FirstApp.Models.Employee, FirstApp.Models.Database) on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 22:50:19.059 +05:30 [INF] Executing RedirectResult, redirecting to /Employee/NextPage?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFiaW5hc2hhYmluYXNoNzExQGdtYWlsLmNvbSIsIm5iZiI6MTY4NDI1NzYxOCwiZXhwIjoxNjg0ODYyNDE4LCJpYXQiOjE2ODQyNTc2MTh9.z7F7L0VT7-1flmiIwy6OmKhVNwYsv45ke2EttBSWStI.
+2023-05-16 22:50:19.061 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 1057.3676ms
+2023-05-16 22:50:19.062 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:50:19.076 +05:30 [INF] Session started; Key:f8ade2c4-1312-aa00-16a0-24a4a151a794, Id:b4627153-09a6-4c6e-fca1-0b45111504d6
+2023-05-16 22:50:19.083 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246 - 302 0 - 1148.0872ms
+2023-05-16 22:50:19.101 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/NextPage?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFiaW5hc2hhYmluYXNoNzExQGdtYWlsLmNvbSIsIm5iZiI6MTY4NDI1NzYxOCwiZXhwIjoxNjg0ODYyNDE4LCJpYXQiOjE2ODQyNTc2MTh9.z7F7L0VT7-1flmiIwy6OmKhVNwYsv45ke2EttBSWStI - -
+2023-05-16 22:50:19.102 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.NextPage (FirstApp)'
+2023-05-16 22:50:19.105 +05:30 [INF] Route matched with {action = "NextPage", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult NextPage(System.String) on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 22:50:19.122 +05:30 [INF] Executing RedirectResult, redirecting to /Dashboard.
+2023-05-16 22:50:19.123 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.NextPage (FirstApp) in 17.536ms
+2023-05-16 22:50:19.123 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.NextPage (FirstApp)'
+2023-05-16 22:50:19.123 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/NextPage?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFiaW5hc2hhYmluYXNoNzExQGdtYWlsLmNvbSIsIm5iZiI6MTY4NDI1NzYxOCwiZXhwIjoxNjg0ODYyNDE4LCJpYXQiOjE2ODQyNTc2MTh9.z7F7L0VT7-1flmiIwy6OmKhVNwYsv45ke2EttBSWStI - - - 302 0 - 22.0314ms
+2023-05-16 22:50:19.187 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Dashboard - -
+2023-05-16 22:50:19.202 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-05-16 22:50:19.219 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2023-05-16 22:50:19.219 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Dashboard - - - 401 0 - 31.7489ms
+2023-05-16 22:53:31.369 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Dashboard - -
+2023-05-16 22:53:31.384 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-05-16 22:53:31.387 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2023-05-16 22:53:31.387 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Dashboard - - - 401 0 - 20.2951ms
+2023-05-16 22:53:32.925 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/login - -
+2023-05-16 22:53:32.932 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:53:32.935 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login() on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 22:53:32.940 +05:30 [INF] Executing ViewResult, running view login.
+2023-05-16 22:53:32.960 +05:30 [INF] Executed ViewResult - view login executed in 23.4209ms.
+2023-05-16 22:53:32.961 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 25.3725ms
+2023-05-16 22:53:32.961 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:53:32.963 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/login - - - 200 - text/html;+charset=utf-8 37.6850ms
+2023-05-16 22:53:33.838 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 22:53:33.838 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.6367ms
+2023-05-16 22:53:40.327 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246
+2023-05-16 22:53:40.336 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:53:40.376 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login(FirstApp.Models.Employee, FirstApp.Models.Database) on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 22:53:40.398 +05:30 [INF] Executing RedirectResult, redirecting to /Employee/NextPage?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFiaW5hc2hhYmluYXNoNzExQGdtYWlsLmNvbSIsIm5iZiI6MTY4NDI1NzgyMCwiZXhwIjoxNjg0ODYyNjIwLCJpYXQiOjE2ODQyNTc4MjB9.aWbjY9XO5nAALWxq62PLWZgKyVx2B2MvOF-_AYKhnUs.
+2023-05-16 22:53:40.398 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 21.9853ms
+2023-05-16 22:53:40.398 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:53:40.398 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246 - 302 0 - 71.3903ms
+2023-05-16 22:53:40.411 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/NextPage?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFiaW5hc2hhYmluYXNoNzExQGdtYWlsLmNvbSIsIm5iZiI6MTY4NDI1NzgyMCwiZXhwIjoxNjg0ODYyNjIwLCJpYXQiOjE2ODQyNTc4MjB9.aWbjY9XO5nAALWxq62PLWZgKyVx2B2MvOF-_AYKhnUs - -
+2023-05-16 22:53:40.412 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.NextPage (FirstApp)'
+2023-05-16 22:53:40.414 +05:30 [INF] Route matched with {action = "NextPage", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult NextPage(System.String) on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 22:53:40.417 +05:30 [INF] Executing RedirectResult, redirecting to /Dashboard.
+2023-05-16 22:53:40.417 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.NextPage (FirstApp) in 3.2139ms
+2023-05-16 22:53:40.417 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.NextPage (FirstApp)'
+2023-05-16 22:53:40.417 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/NextPage?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFiaW5hc2hhYmluYXNoNzExQGdtYWlsLmNvbSIsIm5iZiI6MTY4NDI1NzgyMCwiZXhwIjoxNjg0ODYyNjIwLCJpYXQiOjE2ODQyNTc4MjB9.aWbjY9XO5nAALWxq62PLWZgKyVx2B2MvOF-_AYKhnUs - - - 302 0 - 6.0077ms
+2023-05-16 22:53:40.425 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Dashboard - -
+2023-05-16 22:53:40.427 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-05-16 22:53:40.427 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2023-05-16 22:53:40.428 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Dashboard - - - 401 0 - 2.9140ms
+2023-05-16 22:53:54.073 +05:30 [INF] Application is shutting down...
+2023-05-16 22:54:15.742 +05:30 [INF] User profile is available. Using 'C:\Users\abi6\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-05-16 22:54:16.003 +05:30 [INF] Now listening on: http://localhost:5260
+2023-05-16 22:54:16.016 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-16 22:54:16.016 +05:30 [INF] Hosting environment: Development
+2023-05-16 22:54:16.017 +05:30 [INF] Content root path: C:\Users\abi6\Desktop\jwt Authentication\mvc\FirstApp
+2023-05-16 22:54:17.790 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/ - -
+2023-05-16 22:54:17.996 +05:30 [WRN] Failed to determine the https port for redirect.
+2023-05-16 22:54:18.885 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.HomeController.Index (FirstApp)'
+2023-05-16 22:54:19.168 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller FirstApp.Controllers.HomeController (FirstApp).
+2023-05-16 22:54:19.469 +05:30 [INF] Executing ViewResult, running view Index.
+2023-05-16 22:54:20.330 +05:30 [INF] Executed ViewResult - view Index executed in 1019.8459ms.
+2023-05-16 22:54:20.335 +05:30 [INF] Executed action FirstApp.Controllers.HomeController.Index (FirstApp) in 1165.5315ms
+2023-05-16 22:54:20.336 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.HomeController.Index (FirstApp)'
+2023-05-16 22:54:20.419 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/ - - - 200 - text/html;+charset=utf-8 2654.0498ms
+2023-05-16 22:54:21.302 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 22:54:21.312 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 9.9722ms
+2023-05-16 22:54:24.737 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/login - -
+2023-05-16 22:54:24.759 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:54:24.769 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login() on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 22:54:24.782 +05:30 [INF] Executing ViewResult, running view login.
+2023-05-16 22:54:25.368 +05:30 [INF] Executed ViewResult - view login executed in 590.4453ms.
+2023-05-16 22:54:25.370 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 600.0938ms
+2023-05-16 22:54:25.370 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:54:25.383 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/login - - - 200 - text/html;+charset=utf-8 646.3367ms
+2023-05-16 22:54:25.788 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 22:54:25.798 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 9.3827ms
+2023-05-16 22:54:25.799 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/jquery.min.js - -
+2023-05-16 22:54:25.802 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/popper.js - -
+2023-05-16 22:54:25.805 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/bootstrap.min.js - -
+2023-05-16 22:54:25.814 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/bootstrap.min.js - - - 404 0 - 8.6524ms
+2023-05-16 22:54:25.814 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/popper.js - - - 404 0 - 12.0874ms
+2023-05-16 22:54:25.815 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/main.js - -
+2023-05-16 22:54:25.819 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/main.js - - - 404 0 - 4.2959ms
+2023-05-16 22:54:25.819 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/jquery.min.js - - - 404 0 - 19.6033ms
+2023-05-16 22:54:34.913 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246
+2023-05-16 22:54:34.915 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:54:34.989 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login(FirstApp.Models.Employee, FirstApp.Models.Database) on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 22:54:36.145 +05:30 [INF] Executing RedirectResult, redirecting to /Employee/NextPage?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFiaW5hc2hhYmluYXNoNzExQGdtYWlsLmNvbSIsIm5iZiI6MTY4NDI1Nzg3NSwiZXhwIjoxNjg0ODYyNjc1LCJpYXQiOjE2ODQyNTc4NzV9.NNorsjubhtiYAihFiE6BzFoWB5BQzekKb4Iejr6yDO8.
+2023-05-16 22:54:36.148 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 1158.3497ms
+2023-05-16 22:54:36.148 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:54:36.157 +05:30 [INF] Session started; Key:b4776f6a-3e46-5898-4e53-bd64d76b82c8, Id:5c6e87c7-4840-507b-42c8-8040e445043e
+2023-05-16 22:54:36.161 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246 - 302 0 - 1247.8997ms
+2023-05-16 22:54:36.170 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/NextPage?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFiaW5hc2hhYmluYXNoNzExQGdtYWlsLmNvbSIsIm5iZiI6MTY4NDI1Nzg3NSwiZXhwIjoxNjg0ODYyNjc1LCJpYXQiOjE2ODQyNTc4NzV9.NNorsjubhtiYAihFiE6BzFoWB5BQzekKb4Iejr6yDO8 - -
+2023-05-16 22:54:36.181 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.NextPage (FirstApp)'
+2023-05-16 22:54:36.187 +05:30 [INF] Route matched with {action = "NextPage", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult NextPage(System.String) on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 22:54:36.201 +05:30 [INF] Executing RedirectResult, redirecting to /Dashboard.
+2023-05-16 22:54:36.201 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.NextPage (FirstApp) in 13.8792ms
+2023-05-16 22:54:36.201 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.NextPage (FirstApp)'
+2023-05-16 22:54:36.202 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/NextPage?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFiaW5hc2hhYmluYXNoNzExQGdtYWlsLmNvbSIsIm5iZiI6MTY4NDI1Nzg3NSwiZXhwIjoxNjg0ODYyNjc1LCJpYXQiOjE2ODQyNTc4NzV9.NNorsjubhtiYAihFiE6BzFoWB5BQzekKb4Iejr6yDO8 - - - 302 0 - 31.1653ms
+2023-05-16 22:54:36.211 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Dashboard - -
+2023-05-16 22:54:36.230 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-05-16 22:54:36.246 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2023-05-16 22:54:36.246 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Dashboard - - - 401 0 - 34.6826ms
+2023-05-16 22:59:35.607 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Dashboard - -
+2023-05-16 22:59:35.626 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-05-16 22:59:35.627 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2023-05-16 22:59:35.631 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Dashboard - - - 401 0 - 21.6501ms
+2023-05-16 22:59:36.825 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/login - -
+2023-05-16 22:59:36.829 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:59:36.838 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login() on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 22:59:36.842 +05:30 [INF] Executing ViewResult, running view login.
+2023-05-16 22:59:36.874 +05:30 [INF] Executed ViewResult - view login executed in 34.2845ms.
+2023-05-16 22:59:36.877 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 38.6893ms
+2023-05-16 22:59:36.877 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:59:36.878 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/login - - - 200 - text/html;+charset=utf-8 53.4536ms
+2023-05-16 22:59:37.674 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 22:59:37.675 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 1.2461ms
+2023-05-16 22:59:45.775 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246
+2023-05-16 22:59:45.789 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:59:45.813 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login(FirstApp.Models.Employee, FirstApp.Models.Database) on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 22:59:45.837 +05:30 [INF] Executing RedirectResult, redirecting to /Employee/NextPage?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFiaW5hc2hhYmluYXNoNzExQGdtYWlsLmNvbSIsIm5iZiI6MTY4NDI1ODE4NSwiZXhwIjoxNjg0ODYyOTg1LCJpYXQiOjE2ODQyNTgxODV9.oTESq64IAlbcT1xeoK21vtWrfVqnh-DTcBEl3cLBNV8.
+2023-05-16 22:59:45.837 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 23.7156ms
+2023-05-16 22:59:45.837 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 22:59:45.837 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246 - 302 0 - 62.3896ms
+2023-05-16 22:59:45.844 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/NextPage?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFiaW5hc2hhYmluYXNoNzExQGdtYWlsLmNvbSIsIm5iZiI6MTY4NDI1ODE4NSwiZXhwIjoxNjg0ODYyOTg1LCJpYXQiOjE2ODQyNTgxODV9.oTESq64IAlbcT1xeoK21vtWrfVqnh-DTcBEl3cLBNV8 - -
+2023-05-16 22:59:45.844 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.NextPage (FirstApp)'
+2023-05-16 22:59:45.848 +05:30 [INF] Route matched with {action = "NextPage", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult NextPage(System.String) on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 22:59:46.144 +05:30 [INF] Executing RedirectResult, redirecting to /Dashboard.
+2023-05-16 22:59:46.144 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.NextPage (FirstApp) in 296.1622ms
+2023-05-16 22:59:46.144 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.NextPage (FirstApp)'
+2023-05-16 22:59:46.145 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/NextPage?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFiaW5hc2hhYmluYXNoNzExQGdtYWlsLmNvbSIsIm5iZiI6MTY4NDI1ODE4NSwiZXhwIjoxNjg0ODYyOTg1LCJpYXQiOjE2ODQyNTgxODV9.oTESq64IAlbcT1xeoK21vtWrfVqnh-DTcBEl3cLBNV8 - - - 302 0 - 300.6606ms
+2023-05-16 22:59:46.157 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Dashboard - -
+2023-05-16 22:59:46.160 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-05-16 22:59:46.160 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2023-05-16 22:59:46.160 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Dashboard - - - 401 0 - 3.6143ms
+2023-05-16 22:59:55.367 +05:30 [INF] Application is shutting down...
+2023-05-16 23:01:00.767 +05:30 [INF] User profile is available. Using 'C:\Users\abi6\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-05-16 23:01:01.001 +05:30 [INF] Now listening on: http://localhost:5260
+2023-05-16 23:01:01.025 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-16 23:01:01.026 +05:30 [INF] Hosting environment: Development
+2023-05-16 23:01:01.027 +05:30 [INF] Content root path: C:\Users\abi6\Desktop\jwt Authentication\mvc\FirstApp
+2023-05-16 23:01:02.656 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/ - -
+2023-05-16 23:01:02.860 +05:30 [WRN] Failed to determine the https port for redirect.
+2023-05-16 23:01:03.296 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.HomeController.Index (FirstApp)'
+2023-05-16 23:01:03.456 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller FirstApp.Controllers.HomeController (FirstApp).
+2023-05-16 23:01:03.524 +05:30 [INF] Executing ViewResult, running view Index.
+2023-05-16 23:01:04.125 +05:30 [INF] Executed ViewResult - view Index executed in 619.4543ms.
+2023-05-16 23:01:04.137 +05:30 [INF] Executed action FirstApp.Controllers.HomeController.Index (FirstApp) in 679.2114ms
+2023-05-16 23:01:04.137 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.HomeController.Index (FirstApp)'
+2023-05-16 23:01:04.210 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/ - - - 200 - text/html;+charset=utf-8 1578.7635ms
+2023-05-16 23:01:05.194 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 23:01:05.216 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 21.7905ms
+2023-05-16 23:01:08.041 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/login - -
+2023-05-16 23:01:08.066 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 23:01:08.077 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login() on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 23:01:08.086 +05:30 [INF] Accessing expired session, Key:b4776f6a-3e46-5898-4e53-bd64d76b82c8
+2023-05-16 23:01:08.090 +05:30 [INF] Executing ViewResult, running view login.
+2023-05-16 23:01:08.439 +05:30 [INF] Executed ViewResult - view login executed in 351.5261ms.
+2023-05-16 23:01:08.440 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 363.1654ms
+2023-05-16 23:01:08.441 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 23:01:08.444 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/login - - - 200 - text/html;+charset=utf-8 402.4690ms
+2023-05-16 23:01:08.925 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/jquery.min.js - -
+2023-05-16 23:01:08.944 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/jquery.min.js - - - 404 0 - 19.1432ms
+2023-05-16 23:01:08.945 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 23:01:08.946 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 1.0216ms
+2023-05-16 23:01:08.947 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/popper.js - -
+2023-05-16 23:01:08.950 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/popper.js - - - 404 0 - 2.6885ms
+2023-05-16 23:01:08.951 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/bootstrap.min.js - -
+2023-05-16 23:01:08.954 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/bootstrap.min.js - - - 404 0 - 2.7967ms
+2023-05-16 23:01:08.955 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/main.js - -
+2023-05-16 23:01:08.956 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/main.js - - - 404 0 - 1.2644ms
+2023-05-16 23:01:16.409 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 227
+2023-05-16 23:01:16.410 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 23:01:16.475 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login(FirstApp.Models.Employee, FirstApp.Models.Database) on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 23:01:17.052 +05:30 [INF] Executing RedirectResult, redirecting to /Admin.
+2023-05-16 23:01:17.053 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 577.5725ms
+2023-05-16 23:01:17.053 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 23:01:17.053 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 227 - 302 0 - 643.8722ms
+2023-05-16 23:01:17.138 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Admin - -
+2023-05-16 23:01:17.138 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.AdminController.Index (FirstApp)'
+2023-05-16 23:01:17.160 +05:30 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller FirstApp.Controllers.AdminController (FirstApp).
+2023-05-16 23:01:19.045 +05:30 [INF] Entity Framework Core 6.0.0 initialized 'EmployeeDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2023-05-16 23:01:20.496 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 227
+2023-05-16 23:01:20.497 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 23:01:20.499 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login(FirstApp.Models.Employee, FirstApp.Models.Database) on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 23:01:20.514 +05:30 [INF] Executing RedirectResult, redirecting to /Admin.
+2023-05-16 23:01:20.515 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 15.1191ms
+2023-05-16 23:01:20.515 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 23:01:20.516 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 227 - 302 0 - 18.8874ms
+2023-05-16 23:01:20.548 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Admin - -
+2023-05-16 23:01:20.555 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.AdminController.Index (FirstApp)'
+2023-05-16 23:01:20.556 +05:30 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller FirstApp.Controllers.AdminController (FirstApp).
+2023-05-16 23:01:20.631 +05:30 [INF] Entity Framework Core 6.0.0 initialized 'EmployeeDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2023-05-16 23:01:23.974 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 227
+2023-05-16 23:01:23.975 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 23:01:23.975 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login(FirstApp.Models.Employee, FirstApp.Models.Database) on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 23:01:23.977 +05:30 [INF] Executing RedirectResult, redirecting to /Admin.
+2023-05-16 23:01:23.977 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 1.796ms
+2023-05-16 23:01:23.977 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 23:01:23.977 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 227 - 302 0 - 2.9803ms
+2023-05-16 23:01:23.990 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Admin - -
+2023-05-16 23:01:23.992 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.AdminController.Index (FirstApp)'
+2023-05-16 23:01:23.992 +05:30 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller FirstApp.Controllers.AdminController (FirstApp).
+2023-05-16 23:01:24.211 +05:30 [INF] Entity Framework Core 6.0.0 initialized 'EmployeeDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2023-05-16 23:01:24.932 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 227
+2023-05-16 23:01:24.933 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 23:01:24.933 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login(FirstApp.Models.Employee, FirstApp.Models.Database) on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 23:01:24.936 +05:30 [INF] Executing RedirectResult, redirecting to /Admin.
+2023-05-16 23:01:24.936 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 3.0383ms
+2023-05-16 23:01:24.936 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 23:01:24.936 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 227 - 302 0 - 4.7420ms
+2023-05-16 23:01:24.955 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Admin - -
+2023-05-16 23:01:24.956 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.AdminController.Index (FirstApp)'
+2023-05-16 23:01:24.956 +05:30 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller FirstApp.Controllers.AdminController (FirstApp).
+2023-05-16 23:01:24.957 +05:30 [INF] Entity Framework Core 6.0.0 initialized 'EmployeeDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2023-05-16 23:01:25.850 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 227
+2023-05-16 23:01:25.851 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 23:01:25.851 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login(FirstApp.Models.Employee, FirstApp.Models.Database) on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 23:01:25.856 +05:30 [INF] Executing RedirectResult, redirecting to /Admin.
+2023-05-16 23:01:25.857 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 5.7485ms
+2023-05-16 23:01:25.857 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 23:01:25.858 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 227 - 302 0 - 7.6548ms
+2023-05-16 23:01:25.869 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Admin - -
+2023-05-16 23:01:25.870 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.AdminController.Index (FirstApp)'
+2023-05-16 23:01:25.870 +05:30 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller FirstApp.Controllers.AdminController (FirstApp).
+2023-05-16 23:01:25.871 +05:30 [INF] Entity Framework Core 6.0.0 initialized 'EmployeeDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2023-05-16 23:01:26.048 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 227
+2023-05-16 23:01:26.049 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 23:01:26.049 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login(FirstApp.Models.Employee, FirstApp.Models.Database) on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 23:01:26.087 +05:30 [INF] Executing RedirectResult, redirecting to /Admin.
+2023-05-16 23:01:26.087 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 38.2767ms
+2023-05-16 23:01:26.087 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 23:01:26.088 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 227 - 302 0 - 39.5190ms
+2023-05-16 23:01:26.254 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Admin - -
+2023-05-16 23:01:26.255 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.AdminController.Index (FirstApp)'
+2023-05-16 23:01:26.255 +05:30 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller FirstApp.Controllers.AdminController (FirstApp).
+2023-05-16 23:01:26.257 +05:30 [INF] Entity Framework Core 6.0.0 initialized 'EmployeeDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2023-05-16 23:01:26.738 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 227
+2023-05-16 23:01:26.740 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 23:01:26.740 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login(FirstApp.Models.Employee, FirstApp.Models.Database) on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 23:01:26.746 +05:30 [INF] Executing RedirectResult, redirecting to /Admin.
+2023-05-16 23:01:26.746 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 5.4002ms
+2023-05-16 23:01:26.746 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 23:01:26.747 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 227 - 302 0 - 9.0040ms
+2023-05-16 23:01:26.827 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Admin - -
+2023-05-16 23:01:26.827 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.AdminController.Index (FirstApp)'
+2023-05-16 23:01:26.827 +05:30 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller FirstApp.Controllers.AdminController (FirstApp).
+2023-05-16 23:01:26.829 +05:30 [INF] Entity Framework Core 6.0.0 initialized 'EmployeeDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2023-05-16 23:01:27.306 +05:30 [INF] Executed DbCommand (141ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[DateOfBirth], [e].[Department], [e].[EmailId], [e].[Name], [e].[userPassword]
+FROM [Employees] AS [e]
+2023-05-16 23:01:27.306 +05:30 [INF] Executed DbCommand (310ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[DateOfBirth], [e].[Department], [e].[EmailId], [e].[Name], [e].[userPassword]
+FROM [Employees] AS [e]
+2023-05-16 23:01:27.306 +05:30 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[DateOfBirth], [e].[Department], [e].[EmailId], [e].[Name], [e].[userPassword]
+FROM [Employees] AS [e]
+2023-05-16 23:01:27.309 +05:30 [INF] Executed DbCommand (310ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[DateOfBirth], [e].[Department], [e].[EmailId], [e].[Name], [e].[userPassword]
+FROM [Employees] AS [e]
+2023-05-16 23:01:27.634 +05:30 [INF] Executing ViewResult, running view Index.
+2023-05-16 23:01:27.634 +05:30 [INF] Executing ViewResult, running view Index.
+2023-05-16 23:01:27.635 +05:30 [INF] Executing ViewResult, running view Index.
+2023-05-16 23:01:27.635 +05:30 [INF] Executing ViewResult, running view Index.
+2023-05-16 23:01:27.686 +05:30 [INF] Executed ViewResult - view Index executed in 52.8336ms.
+2023-05-16 23:01:27.686 +05:30 [INF] Executed ViewResult - view Index executed in 53.2689ms.
+2023-05-16 23:01:27.686 +05:30 [INF] Executed ViewResult - view Index executed in 52.7438ms.
+2023-05-16 23:01:27.688 +05:30 [INF] Executed action FirstApp.Controllers.AdminController.Index (FirstApp) in 1432.3913ms
+2023-05-16 23:01:27.688 +05:30 [INF] Executed action FirstApp.Controllers.AdminController.Index (FirstApp) in 10527.6188ms
+2023-05-16 23:01:27.688 +05:30 [INF] Executed action FirstApp.Controllers.AdminController.Index (FirstApp) in 860.2179ms
+2023-05-16 23:01:27.689 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.AdminController.Index (FirstApp)'
+2023-05-16 23:01:27.689 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.AdminController.Index (FirstApp)'
+2023-05-16 23:01:27.689 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.AdminController.Index (FirstApp)'
+2023-05-16 23:01:27.691 +05:30 [INF] Executed ViewResult - view Index executed in 58.9275ms.
+2023-05-16 23:01:27.692 +05:30 [INF] Executed action FirstApp.Controllers.AdminController.Index (FirstApp) in 7135.3082ms
+2023-05-16 23:01:27.693 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.AdminController.Index (FirstApp)'
+2023-05-16 23:01:27.704 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Admin - - - 200 - text/html;+charset=utf-8 1450.0004ms
+2023-05-16 23:01:27.705 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Admin - - - 200 - text/html;+charset=utf-8 10566.8398ms
+2023-05-16 23:01:27.704 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Admin - - - 200 - text/html;+charset=utf-8 877.7388ms
+2023-05-16 23:01:27.705 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Admin - - - 200 - text/html;+charset=utf-8 7156.6981ms
+2023-05-16 23:01:27.710 +05:30 [INF] Executed DbCommand (672ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[DateOfBirth], [e].[Department], [e].[EmailId], [e].[Name], [e].[userPassword]
+FROM [Employees] AS [e]
+2023-05-16 23:01:27.710 +05:30 [INF] Executed DbCommand (620ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[DateOfBirth], [e].[Department], [e].[EmailId], [e].[Name], [e].[userPassword]
+FROM [Employees] AS [e]
+2023-05-16 23:01:27.710 +05:30 [INF] Executed DbCommand (667ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[DateOfBirth], [e].[Department], [e].[EmailId], [e].[Name], [e].[userPassword]
+FROM [Employees] AS [e]
+2023-05-16 23:01:27.715 +05:30 [INF] Executing ViewResult, running view Index.
+2023-05-16 23:01:27.716 +05:30 [INF] Executing ViewResult, running view Index.
+2023-05-16 23:01:27.719 +05:30 [INF] Executed ViewResult - view Index executed in 3.8057ms.
+2023-05-16 23:01:27.719 +05:30 [INF] Executed action FirstApp.Controllers.AdminController.Index (FirstApp) in 3727.12ms
+2023-05-16 23:01:27.719 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.AdminController.Index (FirstApp)'
+2023-05-16 23:01:27.720 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Admin - - - 200 - text/html;+charset=utf-8 3730.0221ms
+2023-05-16 23:01:27.724 +05:30 [INF] Executing ViewResult, running view Index.
+2023-05-16 23:01:27.726 +05:30 [INF] Executed ViewResult - view Index executed in 1.1352ms.
+2023-05-16 23:01:27.726 +05:30 [INF] Executed action FirstApp.Controllers.AdminController.Index (FirstApp) in 2769.8088ms
+2023-05-16 23:01:27.726 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.AdminController.Index (FirstApp)'
+2023-05-16 23:01:27.726 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Admin - - - 200 - text/html;+charset=utf-8 2771.0601ms
+2023-05-16 23:01:27.730 +05:30 [INF] Executed ViewResult - view Index executed in 13.9506ms.
+2023-05-16 23:01:27.730 +05:30 [INF] Executed action FirstApp.Controllers.AdminController.Index (FirstApp) in 1859.9542ms
+2023-05-16 23:01:27.730 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.AdminController.Index (FirstApp)'
+2023-05-16 23:01:27.731 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Admin - - - 200 - text/html;+charset=utf-8 1862.7483ms
+2023-05-16 23:01:27.856 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 23:01:27.856 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.2959ms
+2023-05-16 23:01:57.850 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/login - -
+2023-05-16 23:01:57.852 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 23:01:57.853 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login() on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 23:01:57.854 +05:30 [INF] Accessing expired session, Key:b4776f6a-3e46-5898-4e53-bd64d76b82c8
+2023-05-16 23:01:57.854 +05:30 [INF] Executing ViewResult, running view login.
+2023-05-16 23:01:57.892 +05:30 [INF] Executed ViewResult - view login executed in 38.1051ms.
+2023-05-16 23:01:57.893 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 39.9344ms
+2023-05-16 23:01:57.893 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 23:01:57.893 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/login - - - 200 - text/html;+charset=utf-8 43.4105ms
+2023-05-16 23:01:58.297 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 23:01:58.298 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.3625ms
+2023-05-16 23:02:09.530 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246
+2023-05-16 23:02:09.535 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 23:02:09.535 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login(FirstApp.Models.Employee, FirstApp.Models.Database) on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 23:02:09.821 +05:30 [INF] Accessing expired session, Key:b4776f6a-3e46-5898-4e53-bd64d76b82c8
+2023-05-16 23:02:09.823 +05:30 [INF] Executing RedirectResult, redirecting to /Employee/NextPage?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFiaW5hc2hhYmluYXNoNzExQGdtYWlsLmNvbSIsIm5iZiI6MTY4NDI1ODMyOSwiZXhwIjoxNjg0ODYzMTI5LCJpYXQiOjE2ODQyNTgzMjl9.ztnPrjzin6g0zOYvjrKYxrpr3uURMdtw4zHtjmZXpjI.
+2023-05-16 23:02:09.825 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 289.4931ms
+2023-05-16 23:02:09.825 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 23:02:09.830 +05:30 [INF] Session started; Key:b4776f6a-3e46-5898-4e53-bd64d76b82c8, Id:d34e7426-0efd-f3a8-c1b4-8257892b4523
+2023-05-16 23:02:09.832 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246 - 302 0 - 301.3252ms
+2023-05-16 23:02:09.839 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/NextPage?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFiaW5hc2hhYmluYXNoNzExQGdtYWlsLmNvbSIsIm5iZiI6MTY4NDI1ODMyOSwiZXhwIjoxNjg0ODYzMTI5LCJpYXQiOjE2ODQyNTgzMjl9.ztnPrjzin6g0zOYvjrKYxrpr3uURMdtw4zHtjmZXpjI - -
+2023-05-16 23:02:09.839 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.NextPage (FirstApp)'
+2023-05-16 23:02:09.842 +05:30 [INF] Route matched with {action = "NextPage", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult NextPage(System.String) on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 23:02:10.004 +05:30 [INF] Executing RedirectResult, redirecting to /Dashboard.
+2023-05-16 23:02:10.004 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.NextPage (FirstApp) in 161.4276ms
+2023-05-16 23:02:10.004 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.NextPage (FirstApp)'
+2023-05-16 23:02:10.004 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/NextPage?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFiaW5hc2hhYmluYXNoNzExQGdtYWlsLmNvbSIsIm5iZiI6MTY4NDI1ODMyOSwiZXhwIjoxNjg0ODYzMTI5LCJpYXQiOjE2ODQyNTgzMjl9.ztnPrjzin6g0zOYvjrKYxrpr3uURMdtw4zHtjmZXpjI - - - 302 0 - 165.7046ms
+2023-05-16 23:02:10.014 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Dashboard - -
+2023-05-16 23:02:10.024 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-05-16 23:02:10.032 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2023-05-16 23:02:10.032 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Dashboard - - - 401 0 - 18.3665ms
+2023-05-16 23:17:06.658 +05:30 [INF] User profile is available. Using 'C:\Users\abi6\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-05-16 23:17:06.996 +05:30 [INF] Now listening on: http://localhost:5260
+2023-05-16 23:17:07.009 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-16 23:17:07.012 +05:30 [INF] Hosting environment: Development
+2023-05-16 23:17:07.013 +05:30 [INF] Content root path: C:\Users\abi6\Desktop\jwt Authentication\mvc\FirstApp
+2023-05-16 23:24:00.668 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Dashboard - -
+2023-05-16 23:24:00.703 +05:30 [WRN] Failed to determine the https port for redirect.
+2023-05-16 23:24:00.842 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-05-16 23:24:00.851 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2023-05-16 23:24:00.859 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Dashboard - - - 401 0 - 196.0233ms
+2023-05-16 23:24:21.499 +05:30 [INF] Application is shutting down...
+2023-05-16 23:24:44.836 +05:30 [INF] User profile is available. Using 'C:\Users\abi6\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-05-16 23:24:45.070 +05:30 [INF] Now listening on: http://localhost:5260
+2023-05-16 23:24:45.083 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-16 23:24:45.084 +05:30 [INF] Hosting environment: Development
+2023-05-16 23:24:45.085 +05:30 [INF] Content root path: C:\Users\abi6\Desktop\jwt Authentication\mvc\FirstApp
+2023-05-16 23:24:46.838 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/ - -
+2023-05-16 23:24:46.998 +05:30 [WRN] Failed to determine the https port for redirect.
+2023-05-16 23:24:47.325 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.HomeController.Index (FirstApp)'
+2023-05-16 23:24:47.479 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller FirstApp.Controllers.HomeController (FirstApp).
+2023-05-16 23:24:47.542 +05:30 [INF] Executing ViewResult, running view Index.
+2023-05-16 23:24:48.058 +05:30 [INF] Executed ViewResult - view Index executed in 555.7458ms.
+2023-05-16 23:24:48.063 +05:30 [INF] Executed action FirstApp.Controllers.HomeController.Index (FirstApp) in 583.5226ms
+2023-05-16 23:24:48.064 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.HomeController.Index (FirstApp)'
+2023-05-16 23:24:48.108 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/ - - - 200 - text/html;+charset=utf-8 1285.7412ms
+2023-05-16 23:24:48.569 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 23:24:48.576 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 6.7846ms
+2023-05-16 23:24:54.255 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/login - -
+2023-05-16 23:24:54.272 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 23:24:54.278 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login() on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 23:24:54.286 +05:30 [INF] Executing ViewResult, running view login.
+2023-05-16 23:24:54.810 +05:30 [INF] Executed ViewResult - view login executed in 527.5631ms.
+2023-05-16 23:24:54.811 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 532.7841ms
+2023-05-16 23:24:54.811 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 23:24:54.814 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/login - - - 200 - text/html;+charset=utf-8 558.9866ms
+2023-05-16 23:24:55.061 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 23:24:55.062 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/jquery.min.js - -
+2023-05-16 23:24:55.062 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.8855ms
+2023-05-16 23:24:55.063 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/popper.js - -
+2023-05-16 23:24:55.066 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/bootstrap.min.js - -
+2023-05-16 23:24:55.068 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/main.js - -
+2023-05-16 23:24:55.075 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/popper.js - - - 404 0 - 12.1969ms
+2023-05-16 23:24:55.075 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/bootstrap.min.js - - - 404 0 - 9.3652ms
+2023-05-16 23:24:55.075 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/jquery.min.js - - - 404 0 - 13.1801ms
+2023-05-16 23:24:55.075 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/main.js - - - 404 0 - 7.3550ms
+2023-05-16 23:25:05.305 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246
+2023-05-16 23:25:05.306 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 23:25:05.337 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login(FirstApp.Models.Employee, FirstApp.Models.Database) on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 23:25:06.215 +05:30 [INF] Executing RedirectResult, redirecting to /Employee/NextPage?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFiaW5hc2hhYmluYXNoNzExQGdtYWlsLmNvbSIsIm5iZiI6MTY4NDI1OTcwNiwiZXhwIjoxNjg0ODY0NTA2LCJpYXQiOjE2ODQyNTk3MDZ9.4AWdzCVspzb-TatBlHjKFgg_gt1X6KX_E0Y2arGKano.
+2023-05-16 23:25:06.216 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 879.0168ms
+2023-05-16 23:25:06.216 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 23:25:06.222 +05:30 [INF] Session started; Key:63a7f61a-6063-1471-27b8-7928c412f638, Id:09cce4d7-08cf-cdec-34fe-8757d6ac1fe4
+2023-05-16 23:25:06.224 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246 - 302 0 - 918.3920ms
+2023-05-16 23:25:06.231 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/NextPage?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFiaW5hc2hhYmluYXNoNzExQGdtYWlsLmNvbSIsIm5iZiI6MTY4NDI1OTcwNiwiZXhwIjoxNjg0ODY0NTA2LCJpYXQiOjE2ODQyNTk3MDZ9.4AWdzCVspzb-TatBlHjKFgg_gt1X6KX_E0Y2arGKano - -
+2023-05-16 23:25:06.232 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.NextPage (FirstApp)'
+2023-05-16 23:25:06.234 +05:30 [INF] Route matched with {action = "NextPage", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult NextPage(System.String, FirstApp.Models.Database) on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 23:25:06.243 +05:30 [INF] Executing RedirectResult, redirecting to /Dashboard.
+2023-05-16 23:25:06.244 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.NextPage (FirstApp) in 9.6109ms
+2023-05-16 23:25:06.246 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.NextPage (FirstApp)'
+2023-05-16 23:25:06.246 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/NextPage?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFiaW5hc2hhYmluYXNoNzExQGdtYWlsLmNvbSIsIm5iZiI6MTY4NDI1OTcwNiwiZXhwIjoxNjg0ODY0NTA2LCJpYXQiOjE2ODQyNTk3MDZ9.4AWdzCVspzb-TatBlHjKFgg_gt1X6KX_E0Y2arGKano - - - 302 0 - 14.9041ms
+2023-05-16 23:25:06.252 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Dashboard - -
+2023-05-16 23:25:06.261 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-05-16 23:25:06.268 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2023-05-16 23:25:06.269 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Dashboard - - - 401 0 - 16.0558ms
+2023-05-16 23:32:01.582 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Dashboard - -
+2023-05-16 23:32:01.589 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-05-16 23:32:01.591 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2023-05-16 23:32:01.591 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Dashboard - - - 401 0 - 9.5469ms
+2023-05-16 23:32:03.075 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/login - -
+2023-05-16 23:32:03.080 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 23:32:03.084 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login() on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 23:32:03.092 +05:30 [INF] Executing ViewResult, running view login.
+2023-05-16 23:32:03.114 +05:30 [INF] Executed ViewResult - view login executed in 24.0775ms.
+2023-05-16 23:32:03.114 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 30.2745ms
+2023-05-16 23:32:03.114 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 23:32:03.115 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/login - - - 200 - text/html;+charset=utf-8 40.1789ms
+2023-05-16 23:32:03.533 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 23:32:03.534 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.4433ms
+2023-05-16 23:32:45.453 +05:30 [INF] Application is shutting down...
+2023-05-16 23:33:05.509 +05:30 [INF] User profile is available. Using 'C:\Users\abi6\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-05-16 23:33:05.710 +05:30 [INF] Now listening on: http://localhost:5260
+2023-05-16 23:33:05.726 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-16 23:33:05.727 +05:30 [INF] Hosting environment: Development
+2023-05-16 23:33:05.727 +05:30 [INF] Content root path: C:\Users\abi6\Desktop\jwt Authentication\mvc\FirstApp
+2023-05-16 23:33:07.127 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/ - -
+2023-05-16 23:33:07.262 +05:30 [WRN] Failed to determine the https port for redirect.
+2023-05-16 23:33:07.689 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.HomeController.Index (FirstApp)'
+2023-05-16 23:33:07.829 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller FirstApp.Controllers.HomeController (FirstApp).
+2023-05-16 23:33:07.925 +05:30 [INF] Executing ViewResult, running view Index.
+2023-05-16 23:33:08.341 +05:30 [INF] Executed ViewResult - view Index executed in 484.0572ms.
+2023-05-16 23:33:08.347 +05:30 [INF] Executed action FirstApp.Controllers.HomeController.Index (FirstApp) in 516.0978ms
+2023-05-16 23:33:08.349 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.HomeController.Index (FirstApp)'
+2023-05-16 23:33:08.409 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/ - - - 200 - text/html;+charset=utf-8 1317.8792ms
+2023-05-16 23:33:08.900 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 23:33:08.906 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 6.1791ms
+2023-05-16 23:33:21.258 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/login - -
+2023-05-16 23:33:21.273 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 23:33:21.278 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login() on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 23:33:21.285 +05:30 [INF] Executing ViewResult, running view login.
+2023-05-16 23:33:21.519 +05:30 [INF] Executed ViewResult - view login executed in 237.097ms.
+2023-05-16 23:33:21.520 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 241.9972ms
+2023-05-16 23:33:21.520 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 23:33:21.523 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/login - - - 200 - text/html;+charset=utf-8 265.4562ms
+2023-05-16 23:33:21.716 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/jquery.min.js - -
+2023-05-16 23:33:21.716 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/popper.js - -
+2023-05-16 23:33:21.724 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 23:33:21.725 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 1.4286ms
+2023-05-16 23:33:21.725 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/bootstrap.min.js - -
+2023-05-16 23:33:21.726 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/main.js - -
+2023-05-16 23:33:21.731 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/bootstrap.min.js - - - 404 0 - 6.2067ms
+2023-05-16 23:33:21.731 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/main.js - - - 404 0 - 5.7438ms
+2023-05-16 23:33:21.732 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/popper.js - - - 404 0 - 15.4851ms
+2023-05-16 23:33:21.732 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/jquery.min.js - - - 404 0 - 16.0811ms
+2023-05-16 23:33:41.574 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 236
+2023-05-16 23:33:41.575 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 23:33:41.708 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login(FirstApp.Models.Employee, FirstApp.Models.Database) on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 23:33:42.049 +05:30 [INF] Executing ViewResult, running view Login.
+2023-05-16 23:33:42.075 +05:30 [INF] Executed ViewResult - view Login executed in 27.6337ms.
+2023-05-16 23:33:42.076 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 367.4844ms
+2023-05-16 23:33:42.076 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 23:33:42.076 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 236 - 200 - text/html;+charset=utf-8 502.6895ms
+2023-05-16 23:33:42.202 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/jquery.min.js - -
+2023-05-16 23:33:42.204 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/jquery.min.js - - - 404 0 - 2.2700ms
+2023-05-16 23:33:42.207 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/popper.js - -
+2023-05-16 23:33:42.209 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/popper.js - - - 404 0 - 1.4419ms
+2023-05-16 23:33:42.209 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/bootstrap.min.js - -
+2023-05-16 23:33:42.210 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 23:33:42.211 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/bootstrap.min.js - - - 404 0 - 1.1575ms
+2023-05-16 23:33:42.211 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.2590ms
+2023-05-16 23:33:42.211 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/main.js - -
+2023-05-16 23:33:42.214 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/main.js - - - 404 0 - 2.6827ms
+2023-05-16 23:34:09.114 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 242
+2023-05-16 23:34:09.115 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 23:34:09.116 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login(FirstApp.Models.Employee, FirstApp.Models.Database) on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 23:34:09.131 +05:30 [INF] Executing ViewResult, running view Login.
+2023-05-16 23:34:09.134 +05:30 [INF] Executed ViewResult - view Login executed in 3.7898ms.
+2023-05-16 23:34:09.135 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 18.5659ms
+2023-05-16 23:34:09.135 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 23:34:09.135 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 242 - 200 - text/html;+charset=utf-8 20.8344ms
+2023-05-16 23:34:09.190 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/jquery.min.js - -
+2023-05-16 23:34:09.191 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/jquery.min.js - - - 404 0 - 1.0644ms
+2023-05-16 23:34:09.200 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/popper.js - -
+2023-05-16 23:34:09.201 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/popper.js - - - 404 0 - 1.0558ms
+2023-05-16 23:34:09.268 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - -
+2023-05-16 23:34:09.268 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.2770ms
+2023-05-16 23:34:09.269 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/bootstrap.min.js - -
+2023-05-16 23:34:09.270 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/bootstrap.min.js - - - 404 0 - 0.9271ms
+2023-05-16 23:34:09.271 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/js/main.js - -
+2023-05-16 23:34:09.273 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/js/main.js - - - 404 0 - 1.8086ms
+2023-05-16 23:34:37.251 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246
+2023-05-16 23:34:37.252 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 23:34:37.252 +05:30 [INF] Route matched with {action = "login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult login(FirstApp.Models.Employee, FirstApp.Models.Database) on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 23:34:37.429 +05:30 [INF] Executing RedirectResult, redirecting to /Employee/NextPage?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFiaW5hc2hhYmluYXNoNzExQGdtYWlsLmNvbSIsIm5iZiI6MTY4NDI2MDI3NywiZXhwIjoxNjg0ODY1MDc3LCJpYXQiOjE2ODQyNjAyNzd9.Seo0fmgI8tRHQjMaJOJXSyigFLCVBnJFamPurkt5vZk.
+2023-05-16 23:34:37.431 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.login (FirstApp) in 178.7956ms
+2023-05-16 23:34:37.431 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.login (FirstApp)'
+2023-05-16 23:34:37.436 +05:30 [INF] Session started; Key:53da904a-8e56-b887-9953-ba8d61ebfcb0, Id:650be960-0406-9a76-fb38-7f658cf62d94
+2023-05-16 23:34:37.438 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5260/Employee/login application/x-www-form-urlencoded 246 - 302 0 - 187.8181ms
+2023-05-16 23:34:37.445 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Employee/NextPage?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFiaW5hc2hhYmluYXNoNzExQGdtYWlsLmNvbSIsIm5iZiI6MTY4NDI2MDI3NywiZXhwIjoxNjg0ODY1MDc3LCJpYXQiOjE2ODQyNjAyNzd9.Seo0fmgI8tRHQjMaJOJXSyigFLCVBnJFamPurkt5vZk - -
+2023-05-16 23:34:37.445 +05:30 [INF] Executing endpoint 'FirstApp.Controllers.EmployeeController.NextPage (FirstApp)'
+2023-05-16 23:34:37.448 +05:30 [INF] Route matched with {action = "NextPage", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult NextPage(System.String, FirstApp.Models.Database) on controller FirstApp.Controllers.EmployeeController (FirstApp).
+2023-05-16 23:34:37.457 +05:30 [INF] Executing RedirectResult, redirecting to /Dashboard.
+2023-05-16 23:34:37.458 +05:30 [INF] Executed action FirstApp.Controllers.EmployeeController.NextPage (FirstApp) in 9.4665ms
+2023-05-16 23:34:37.458 +05:30 [INF] Executed endpoint 'FirstApp.Controllers.EmployeeController.NextPage (FirstApp)'
+2023-05-16 23:34:37.458 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Employee/NextPage?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFiaW5hc2hhYmluYXNoNzExQGdtYWlsLmNvbSIsIm5iZiI6MTY4NDI2MDI3NywiZXhwIjoxNjg0ODY1MDc3LCJpYXQiOjE2ODQyNjAyNzd9.Seo0fmgI8tRHQjMaJOJXSyigFLCVBnJFamPurkt5vZk - - - 302 0 - 12.9288ms
+2023-05-16 23:34:37.466 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5260/Dashboard - -
+2023-05-16 23:34:37.474 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-05-16 23:34:37.482 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2023-05-16 23:34:37.482 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5260/Dashboard - - - 401 0 - 16.0955ms

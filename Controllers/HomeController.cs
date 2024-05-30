@@ -10,9 +10,8 @@ using Microsoft.AspNetCore.Mvc;
 using FirstApp.Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using FirstApp.Filters;
+
 
 namespace FirstApp.Controllers;
 [ExceptionLogFilter]

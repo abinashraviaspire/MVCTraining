@@ -2,8 +2,6 @@
 @{
     Layout=null;
 }
-
-
 @using Microsoft.AspNetCore.Http
 <head>
     <meta charset="utf-8" />
@@ -50,13 +48,7 @@
                         <div>
                             <ul class="navbar-nav flex-grow-1">
                                 
-                        @if(User.Identity.IsAuthenticated){
-                             @* <li class="nav-item">
-                                <a class="nav-link" asp-area="" asp-controller="Dashboard" asp-action="Index">
-                                  <img style="width:20px;" src="~/images/notification.png" alt="notification">
-                </a>
-                        </li> *@
-                            
+                        @if(User.Identity.IsAuthenticated){     
                             <li class="nav-item">
                             <a class="nav-link text-dark "  style="text-align:right;" asp-controller="Home" asp-action="logOut"><b>Logout</b></a>
                         </li>

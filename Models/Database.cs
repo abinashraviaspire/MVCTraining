@@ -10,7 +10,7 @@ using System.Data;
 using System.Net;
 using System.Net.Mail;
 using System.ComponentModel.DataAnnotations;
-using System.Collections;
+
 
 namespace FirstApp.Models
 {
@@ -42,7 +42,7 @@ public string? Destination{get;set;}
                 {                 
                   return "success";         
                 }
-                else if ((employee.EmailId=="Admin@gmail.com") && (employee.userPassword=="Admin@1234"))
+                else if ((employee.EmailId=="admin@gmail.com") && (employee.userPassword=="Admin@1234"))
                 {
                   return "Admin"; 
                 }

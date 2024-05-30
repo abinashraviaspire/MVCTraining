@@ -26,7 +26,8 @@ public string? Destination{get;set;}
 public string to="abinashabinash711@gmail.com";
 public static string? display(String? Mail)
         {
-            sqlConnection.Open();
+            try{
+                sqlConnection.Open();
             SqlCommand command=new SqlCommand("getUser",sqlConnection); 
             command.CommandType = CommandType.StoredProcedure;
             command.Parameters.AddWithValue("@EmailId",Mail);
@@ -37,10 +38,21 @@ public static string? display(String? Mail)
             }
             sqlConnection.Close();
             return Name;
+
+            }
+            catch(Exception){
+            sqlConnection.Close();
+            return Name;
+
+            }
+            
     }
+
+    
  public static List<string> destinationList = new List<string>() { "Pondicherry", "Villupuram","Kovalam","Vandalur","Siruseri",};
 public static string? bookBus(string? Destination,string Date)
-        {   
+        {  try
+        {
                 var dateTime = DateTime.Now;
                 var shortDateValue = dateTime.ToShortDateString();
                 string[] bookingDate = Date.Split("-");
@@ -79,12 +91,20 @@ public static string? bookBus(string? Destination,string Date)
                 if(day=="Sunday" || day=="Saturday"){
                         return "Leave";
                 }
-            return "Fail";                 
+            return "Fail";
+        
+        }
+        catch (Exception)
+        {   sqlConnection.Close();
+            return "Success";
+        } 
+                                 
     }
 BookingHistory user=new BookingHistory();
 private static List <BookingHistory> History=new  List<BookingHistory> ();
 public static IEnumerable GetHistory()  
         {  
+            try{
                 SqlCommand sqlCommand = new SqlCommand("GetCurrentUserHistory", sqlConnection);  
                 sqlCommand.CommandType = CommandType.StoredProcedure;  
                 sqlCommand.Parameters.AddWithValue("@Name",Name);
@@ -98,6 +118,13 @@ public static IEnumerable GetHistory()
                 }  
                 sqlConnection.Close(); 
                 return History;
+
+            }
+            catch(Exception){
+                sqlConnection.Close(); 
+                return History;
+            }
+                
         } 
 
 
@@ -123,6 +150,8 @@ public static IEnumerable GetHistory()
 }
  
  public static void sendRequest(string Request){
+
+    try{
         sqlConnection.Open();
         SqlCommand command=new SqlCommand("sendRequest",sqlConnection); 
         command.CommandType = CommandType.StoredProcedure;
@@ -131,6 +160,13 @@ public static IEnumerable GetHistory()
         command.Parameters.AddWithValue("@message",Request);
         command.ExecuteNonQuery();
         sqlConnection.Close();
+
+    }
+    catch(Exception){
+        sqlConnection.Close();
+
+    }
+        
 
  }
     }

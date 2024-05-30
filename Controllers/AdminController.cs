@@ -1,13 +1,12 @@
 using FirstApp.Data;
 using FirstApp.Models;
-using FirstApp.Filters;
 using FirstApp.Models.Admin;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Authorization;
 
 namespace FirstApp.Controllers
-{ 
+{ [Authorize]
     public class AdminController : Controller
     {    
         private readonly EmployeeDBContext employeeDBContext;
@@ -16,6 +15,7 @@ namespace FirstApp.Controllers
         {
             this.employeeDBContext = employeeDBContext;
             }
+        
         [HttpGet]
         public async Task<IActionResult> Index()
         {
@@ -38,7 +38,6 @@ namespace FirstApp.Controllers
 
         [HttpPost]
         public async Task<IActionResult> Add(AddEmployeeViewModel addEmployeeRequest)
-      
         {
             if (ModelState.IsValid)
             {
@@ -49,9 +48,7 @@ namespace FirstApp.Controllers
                 EmailId = addEmployeeRequest.Email,
                 userPassword=addEmployeeRequest.userPassword,
                 Department = addEmployeeRequest.Department,
-                DateOfBirth = addEmployeeRequest.DateOfBirth,
-
-                
+                DateOfBirth = addEmployeeRequest.DateOfBirth,  
             };
 
             await employeeDBContext.Employees.AddAsync(employee);
@@ -68,7 +65,6 @@ namespace FirstApp.Controllers
 
             if(employee != null)
             {
-                
                 var viewModel = new UpdateEmployeeViewModel()
                 {
                     Id = employee.EmployeeId, 
@@ -109,6 +105,7 @@ namespace FirstApp.Controllers
             return View();
             
         }
+
         public async Task<IActionResult> Delete(UpdateEmployeeViewModel model)
         {
             var employee = await employeeDBContext.Employees.FindAsync(model.Id);  
@@ -122,6 +119,7 @@ namespace FirstApp.Controllers
             }
            return RedirectToAction("Index");
         }
+
         [HttpGet]
         public async Task<IActionResult> showHistory()
         {

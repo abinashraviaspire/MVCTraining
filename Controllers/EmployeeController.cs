@@ -15,8 +15,10 @@ using FirstApp.Models;
 using Microsoft.AspNetCore.Authorization;
 using Serilog;
 
+
 namespace FirstApp.Controllers
 {
+   
     public class EmployeeController:Controller{
         public  static string? Mail{get;set;}
         public  static string? password{get;set;}

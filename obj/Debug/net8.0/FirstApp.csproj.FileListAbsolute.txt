@@ -82,3 +82,6 @@ D:\Projects\FirstApp\obj\Debug\net8.0\refint\FirstApp.dll
 D:\Projects\FirstApp\obj\Debug\net8.0\FirstApp.pdb
 D:\Projects\FirstApp\obj\Debug\net8.0\FirstApp.genruntimeconfig.cache
 D:\Projects\FirstApp\obj\Debug\net8.0\ref\FirstApp.dll
+D:\Projects\FirstApp\obj\Debug\net8.0\FirstApp.sourcelink.json
+D:\Projects\FirstApp\bin\Debug\net8.0\MediatR.dll
+D:\Projects\FirstApp\bin\Debug\net8.0\MediatR.Contracts.dll
